@@ -1,0 +1,69 @@
+{
+  "alpha_per_target": 0.016666666666666666,
+  "cost_metadata": {
+    "cost_rule": "batch work time divided equally over five images",
+    "max_seconds_per_record": 71.6,
+    "mean_seconds_per_record": 22.733879999999996,
+    "min_seconds_per_record": 4.2,
+    "raw_batch_seconds": 1136694.0,
+    "side_info_rows": 10000,
+    "total_amortized_seconds": 1136693.9999999998
+  },
+  "cost_source": "G:\\latent_group_verification_mvp\\data\\cifar100n_source\\side_info_cifar100N.csv",
+  "cost_source_sha256": "22b9ca66e25a9c0663ddc415ea3a5b9063f30d434d802ccbd0f0bf3d532d19a9",
+  "image_order_sha256": "423c3118865b4d912ff9082423b992e43fa94ef0f503c4180bd415f915eec018",
+  "methods": [
+    "score_time",
+    "risk_per_second"
+  ],
+  "private_reference_role": "old-seed development evaluation only",
+  "protocol": "time_aware_audit_decision_support_cifar100n_v1",
+  "protocol_file": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\PROTOCOL.md",
+  "protocol_sha256": "84ab51476ee223525b3200b76e97165a1df4159ec81194ce41a355675d75f4b2",
+  "public_manifest": {
+    "label_source_sha256": "fbe91e5598e2311cdd78a17f0123c76b4000446c044027f5584f096597fe5319",
+    "records": [
+      {
+        "dynamics_path": "G:\\latent_group_verification_mvp\\outputs\\audit_budget_advisor_cifar100n\\probes\\probe_seed0.dynamics.npz",
+        "dynamics_sha256": "f44e98168f2de715852812a9ecb139e4db6efbe54ba94b2cb3212bcabfc22ebc",
+        "ranking_sha256": "37310b11d7da32cee4bb196e5e6fe11143bb98feb95a4e4dd4d44cca85e083ce",
+        "score_sha256": "280cc1d1a149bf59bbdddc6e9932888a373662d90d9930f94a062ff55c6727fa",
+        "seed": 0
+      },
+      {
+        "dynamics_path": "G:\\latent_group_verification_mvp\\outputs\\audit_budget_advisor_cifar100n\\probes\\probe_seed1.dynamics.npz",
+        "dynamics_sha256": "d3ef3b416c9dabb2cef821073ac6c5eb59663c64cca4ac5afe408fbbc8e6b4cf",
+        "ranking_sha256": "9c8ea91cf7ff1cd16992926723f1455affa66b83cdf6a8a031016f5575bc908e",
+        "score_sha256": "62181320a602f5e3046688d7e41910a995c8b07e0a57c7aa676e6e1d1787d2ac",
+        "seed": 1
+      },
+      {
+        "dynamics_path": "G:\\latent_group_verification_mvp\\outputs\\audit_budget_advisor_cifar100n\\probes\\probe_seed2.dynamics.npz",
+        "dynamics_sha256": "83e06df6ba864239832f65fdedbd4e2dec76cd6e8c93adf88a4ed3f5cd317d56",
+        "ranking_sha256": "a5b749fadd98cad10f8c25ff9153b8111bff1a7ce09cd335e2836bb43a97b27a",
+        "score_sha256": "b999e68bd9ff4b16859646859461d3b5fbd316aeb82d2c16f92812593e2e270d",
+        "seed": 2
+      }
+    ]
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "sentinel_count": 500,
+  "targets": [
+    0.3,
+    0.35,
+    0.4
+  ],
+  "time_budgets": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "coverage": {
+    "budget_count": 7,
+    "certificate_alpha": 0.0071428571428571435,
+    "familywise_beta": 0.05,
+    "mode": "simultaneous_budget_grid_bonferroni",
+    "targets_share_upper_curve": true
+  },
+  "decision": {
+    "mean_paired_time_reduction": 0.4831628708321163,
+    "paired_count": 300,
+    "paired_time_gate_at_least_0_25": true,
+    "risk_per_second_go": true
+  },
+  "formal_decision": {
+    "decision": "simultaneous-v3 fresh external efficiency GO",
+    "fresh_external_efficiency_go": true,
+    "mean_paired_time_reduction": 0.4831628708321163,
+    "paired_count": 300,
+    "selected_route": "risk_per_second",
+    "selected_route_pass": true
+  },
+  "methods": {
+    "risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.0020833333333333333,
+      "mean_union_item_fraction": 0.13179636582390747,
+      "mean_union_time_fraction": 0.006558608674293709,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    },
+    "score_time": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.04263333333333333,
+      "mean_union_item_fraction": 0.08924874117155654,
+      "mean_union_time_fraction": 0.07556082157038656,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    }
+  },
+  "private_extraction": {
+    "private_truth_sha256": "76a11028a983aebb49aed5cbeb097de3b50495464d62e78e02a8b403236efdff",
+    "private_truth_size": 30310819,
+    "redactor_stderr": "truth_redacted_rows=1045199"
+  },
+  "truth_alignment": {
+    "ambiguous_formal_subject_count": 0,
+    "error_count": 277415,
+    "error_rate": 0.3298138447747424,
+    "formal_record_count": 841126,
+    "formal_subject_count": 49697,
+    "invalid_expected_response_row_count_within_formal_subjects": 0,
+    "matched_formal_record_count": 841126,
+    "matched_formal_subject_count": 49697,
+    "missing_formal_record_count": 0,
+    "missing_formal_subject_count": 0,
+    "private_row_count": 1045199,
+    "source_subject_count": 50284,
+    "truth_loaded": true
+  }
+}

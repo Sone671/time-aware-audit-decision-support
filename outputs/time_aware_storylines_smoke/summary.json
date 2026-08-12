@@ -1,0 +1,31 @@
+{
+  "cost_cv": 0.7735969732821671,
+  "dataset": "CrowdTruth-StoryLines",
+  "decision": {
+    "cost_gate_at_least_0_25": true,
+    "development_go": false,
+    "mean_paired_time_reduction": 0.28995836985437157,
+    "methods_passed": 0,
+    "paired_count": 14
+  },
+  "methods": {
+    "risk_per_second": {
+      "availability": 0.7333333333333333,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.06840909090909093,
+      "mean_union_item_fraction": 0.2842633067626639,
+      "mean_union_time_fraction": 0.18852251012775467,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "score_time": {
+      "availability": 0.4666666666666667,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.11142857142857142,
+      "mean_union_item_fraction": 0.22739962531682772,
+      "mean_union_time_fraction": 0.22204146904247815,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    }
+  }
+}

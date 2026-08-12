@@ -1,0 +1,26 @@
+{
+  "design_pre_private_sha256": "12da050e7fbb1e393c1d1cb61afdec37741e60dc5d58aedf646d295a8e18bf35",
+  "method_sha256_manifest": {
+    "G:\\eswa\\cost_aware_certification_2026-08-11\\src\\mfsc.py": "fd267819fa5e15293f98efac370e4b9f391cc7f10a20e049e6748bae97ae7e32",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_WHICHDOG_FORMAL_PROTOCOL.md": "a429bbf426bc5a468114145766673c8ecc4df241de3e11611fd4a9afe48caa58",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_WHICHDOG_PUBLIC_PROTOCOL.md": "df569b8cfbfe7da16a7c577b47f04e4cce19d8666900d999e8a6b50995af1496",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\WHICHDOG_PUBLIC_RESULT.md": "639747780add4a8e2b8479fb4a4921c34c331be76755ff36ba2b56bb4efa0777",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\whichdog_public_screen\\public_screen.json": "7c725842a6976f939ab598690349dac02db8308c3183d75dc57bd88e08ed8cfd",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_time_aware_cifar100n.py": "19ad6416d3c34c6473b1c6772dbf02b9e5996f92434d736aeb0b09495735ee9d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "433568fe6c49c8fac67ddd3fe15638f17d9fb1fed0cbf49c3da49ded8a758e0b",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_whichdog_formal_confirmation.py": "13d5061529aa68d4da6fbdb3add4236e221c4edce9df4a1038ecd6aaa074c62e",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_whichdog_public_screen.py": "7d8349f1e4cff294df949c76218ffac1795914c819ed0f310eb07870c37a61fa",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "f9f3201409659af10f28def07938d59da1c4fdf069e7bae25364511160cb114c",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\whichdog_formal_guard.py": "e5672806a4b36fcc0867637e72cdf42cdd8dc949d7724065af50c9311b1302eb",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\whichdog_public.py": "63cc9cc27954d792eb80bbdb07b02cfe1feb7524a82719dce7c53fc1b93dd5dd",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "status": "LOCKED_PRE_PRIVATE",
+  "synthetic_method_dry_run": {
+    "row_count": 12,
+    "sha256": "8417f83246872bdc5592e9407ceceb8c62da00bc62b6e94aef6deac94f53a24c",
+    "status": "PASS"
+  },
+  "truth_loaded": false
+}

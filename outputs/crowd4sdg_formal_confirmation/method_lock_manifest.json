@@ -1,0 +1,24 @@
+{
+  "design_pre_private_sha256": "b454a1f7048e57c171e1ab2d98c665a061b2718a8db9e9a9985c7b9b947d2726",
+  "method_sha256_manifest": {
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\SIMULTANEOUS_V3_CROWD4SDG_FORMAL_PROTOCOL.md": "87770b906ee15c65dfa2b09b6e249ba832028512087025a1d3594153cc921c53",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\SIMULTANEOUS_V3_CROWD4SDG_PUBLIC_PROTOCOL.md": "c4e92fe4e6f80dbd1abc2f5ee8210055f74b896f44b36405cebd6d1be922f208",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\crowd4sdg_public_screen\\public_screen.json": "1e92f2448c6688bef985f05991d954fa47e8da34c31a43f87a5515ab2cc738bc",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\crowd4sdg_formal_guard.py": "5902dc9febacdc5036032c61b5f0a6369b8c87c454ed74a26edd99abd549661d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\crowd4sdg_public.py": "03e5dee76256e3eb09c6107dd02cdfa2b3d5c48d40997dcece726e989323f088",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_crowd4sdg_formal_confirmation.py": "f3c14a8030d949910d3d698a196d813d8302298f6ea772f1d903344403d5f3cd",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_crowd4sdg_public_screen.py": "d812bfd5c39d028fcfe381e54e86b9f282f534d21522a9ef7e62ba99cbe3b1c0",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "433568fe6c49c8fac67ddd3fe15638f17d9fb1fed0cbf49c3da49ded8a758e0b",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\simultaneous_v3.py": "810a06281c6dc85a23558d452413ab7f21ab427049783dc8fd5623d856424056",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "f9f3201409659af10f28def07938d59da1c4fdf069e7bae25364511160cb114c",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "status": "LOCKED_PRE_PRIVATE",
+  "synthetic_method_dry_run": {
+    "row_count": 12,
+    "sha256": "c0771962fd801cbc7afddd83317f2045eee3ae0a7bbf679e05200268977b60c3",
+    "status": "PASS"
+  },
+  "truth_loaded": false
+}

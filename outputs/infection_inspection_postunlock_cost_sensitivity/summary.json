@@ -1,0 +1,129 @@
+{
+  "fresh_confirmation_claim": false,
+  "population_size": 841126,
+  "scenarios": {
+    "cap_q95": {
+      "cap_quantile": 0.95,
+      "cap_seconds": 19.523,
+      "cost_cv": 1.017363596677001,
+      "paired_by_target": {
+        "0.25": {
+          "common_safe_count": 91,
+          "mean_paired_time_reduction": 0.3113052560976412,
+          "positive_fraction": 0.7692307692307693
+        },
+        "0.35": {
+          "common_safe_count": 100,
+          "mean_paired_time_reduction": 0.5098752324258208,
+          "positive_fraction": 0.82
+        },
+        "0.45": {
+          "common_safe_count": 100,
+          "mean_paired_time_reduction": 0.0,
+          "positive_fraction": 0.0
+        }
+      },
+      "summary": {
+        "coverage": {
+          "budget_count": 7,
+          "certificate_alpha": 0.0071428571428571435,
+          "familywise_beta": 0.05,
+          "mode": "simultaneous_budget_grid_bonferroni",
+          "targets_share_upper_curve": true
+        },
+        "decision": {
+          "mean_paired_time_reduction": 0.272564610128754,
+          "paired_count": 291,
+          "paired_time_gate_at_least_0_25": true,
+          "risk_per_second_go": true
+        },
+        "methods": {
+          "risk_per_second": {
+            "availability": 1.0,
+            "issued_safety": 1.0,
+            "mean_excess_time_budget": 0.018533333333333336,
+            "mean_union_item_fraction": 0.11199102155919566,
+            "mean_union_time_fraction": 0.05299761681475256,
+            "passed": true,
+            "unsafe_issued_rate": 0.0
+          },
+          "score_time": {
+            "availability": 0.97,
+            "issued_safety": 1.0,
+            "mean_excess_time_budget": 0.012783505154639177,
+            "mean_union_item_fraction": 0.06893841117069768,
+            "mean_union_time_fraction": 0.07642802399488591,
+            "passed": true,
+            "unsafe_issued_rate": 0.0
+          }
+        }
+      }
+    },
+    "cap_q99": {
+      "cap_quantile": 0.99,
+      "cap_seconds": 138.91925,
+      "cost_cv": 2.5657413739651647,
+      "paired_by_target": {
+        "0.25": {
+          "common_safe_count": 84,
+          "mean_paired_time_reduction": 0.5325333590405457,
+          "positive_fraction": 1.0
+        },
+        "0.35": {
+          "common_safe_count": 100,
+          "mean_paired_time_reduction": 0.595469046158696,
+          "positive_fraction": 0.86
+        },
+        "0.45": {
+          "common_safe_count": 100,
+          "mean_paired_time_reduction": 0.0,
+          "positive_fraction": 0.0
+        }
+      },
+      "summary": {
+        "coverage": {
+          "budget_count": 7,
+          "certificate_alpha": 0.0071428571428571435,
+          "familywise_beta": 0.05,
+          "mode": "simultaneous_budget_grid_bonferroni",
+          "targets_share_upper_curve": true
+        },
+        "decision": {
+          "mean_paired_time_reduction": 0.36718206611012477,
+          "paired_count": 284,
+          "paired_time_gate_at_least_0_25": true,
+          "risk_per_second_go": true
+        },
+        "methods": {
+          "risk_per_second": {
+            "availability": 1.0,
+            "issued_safety": 1.0,
+            "mean_excess_time_budget": 0.017616666666666666,
+            "mean_union_item_fraction": 0.11430516157309766,
+            "mean_union_time_fraction": 0.03543314652422164,
+            "passed": true,
+            "unsafe_issued_rate": 0.0
+          },
+          "score_time": {
+            "availability": 0.9466666666666667,
+            "issued_safety": 1.0,
+            "mean_excess_time_budget": 0.013098591549295775,
+            "mean_union_item_fraction": 0.06473156807609973,
+            "mean_union_time_fraction": 0.07335618807295619,
+            "passed": true,
+            "unsafe_issued_rate": 0.0
+          }
+        }
+      }
+    }
+  },
+  "status": "POST_UNLOCK_ROBUSTNESS_ONLY",
+  "truth_alignment_reverified": {
+    "ambiguous_formal_subject_count": 0,
+    "formal_record_count": 841126,
+    "formal_subject_count": 49697,
+    "matched_formal_record_count": 841126,
+    "matched_formal_subject_count": 49697,
+    "missing_formal_record_count": 0
+  }
+}

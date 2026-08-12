@@ -1,0 +1,18 @@
+{
+  "cost_cv": 0.7735969732821671,
+  "cost_rule": "unit duration divided by candidate-pair count",
+  "population_size": 7778,
+  "private_role": "Experts_Pair development evaluation only",
+  "protocol": "time_aware_storylines_development_v1",
+  "protocol_sha256": "3b2e4fb573c45a49aad2b32530b07badf00df4266e49d087afc9872735b1b270",
+  "risk_rule": "1 - abs(2 * final crowd score - 1)",
+  "sentinel_count": 500,
+  "source": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\external_candidates\\crowdtruth_storylines\\extracted\\CrowdTruth-Crowdsourcing-StoryLines-bc37859\\data\\results\\main_results_only_pairs.csv",
+  "source_doi": "10.5281/zenodo.1478508",
+  "source_sha256": "e8a8b632147ab500e865b1d537aed68af6937f818b2cf9050d7f156a3969bed2",
+  "targets": [
+    0.15,
+    0.2,
+    0.25
+  ]
+}

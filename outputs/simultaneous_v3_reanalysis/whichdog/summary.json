@@ -1,0 +1,49 @@
+{
+  "coverage": {
+    "budget_count": 7,
+    "certificate_alpha": 0.0071428571428571435,
+    "familywise_beta": 0.05,
+    "mode": "simultaneous_budget_grid_bonferroni",
+    "targets_share_upper_curve": true
+  },
+  "dataset": "whichdog",
+  "decision": {
+    "mean_paired_time_reduction": 0.3030895011380409,
+    "paired_count": 300,
+    "paired_time_gate_at_least_0_25": true,
+    "risk_per_second_go": true
+  },
+  "evidence_role": "post_unlock_corrected_validation",
+  "method_go": true,
+  "methods": {
+    "risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.0011333333333333332,
+      "mean_union_item_fraction": 0.06566926129426129,
+      "mean_union_time_fraction": 0.015122817248306426,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    },
+    "score_time": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.02828333333333333,
+      "mean_union_item_fraction": 0.06359421332635617,
+      "mean_union_time_fraction": 0.07320688972910672,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    }
+  },
+  "population_size": 61152,
+  "selected_route": "risk_per_second",
+  "selected_route_pass": true,
+  "sentinel_count": 750,
+  "sentinel_repetitions": 100,
+  "simultaneous_v3_decision": "SIMULTANEOUS_V3_EFFICIENCY_GO",
+  "targets": [
+    0.35,
+    0.45,
+    0.55
+  ]
+}

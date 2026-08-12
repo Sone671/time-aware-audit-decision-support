@@ -1,0 +1,77 @@
+{
+  "alpha_per_target": 0.016666666666666666,
+  "base_seed": 20260814,
+  "cost_rule": "positive finite raw WorkTimeInSeconds; no trimming",
+  "gates": {
+    "availability_min": 0.3,
+    "episode_safety_min": 0.9,
+    "mean_excess_time_budget_max": 0.05,
+    "paired_count_min": 1,
+    "paired_time_reduction_min": 0.25,
+    "unsafe_issued_rate_max": 0.1
+  },
+  "method_sha256_manifest": {
+    "G:\\eswa\\cost_aware_certification_2026-08-11\\src\\mfsc.py": "fd267819fa5e15293f98efac370e4b9f391cc7f10a20e049e6748bae97ae7e32",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\FRAMENET_FRAME_PUBLIC_RESULT.md": "aee630cb699d42b386e29c4159842ad462032c3cc043e76f6a9816158ae756a8",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FRAMENET_FRAME_FORMAL_PROTOCOL.md": "059dadc0f55c5ccf729211399008dd770b8a85bad0e65fd0dd9a6665fdf6de93",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FRAMENET_FRAME_PUBLIC_PROTOCOL.md": "16e6a004615a074868e2c439ec193092ce5607bff8e9fa647832a11e8dd2379d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\framenet_frame_public_screen\\public_screen.json": "bb85fa8032a454f2c48cdae1d04f379d63829b32ab157c2e481e37954058cb77",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\framenet_frame_formal_guard.py": "b7e488526969f3df94f3db514fe16dceec85523180d722c0cd0ca092e42aca9e",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\framenet_frame_public.py": "e0ea774d28e40f392dfe9b0333478e17ab105614bfcf5918d462155c54046a66",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_framenet_frame_formal_confirmation.py": "caee9a8e3d8302b45925e250ddfb42e8d4076d3cdc004e006fab74113c38630a",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_framenet_frame_public_screen.py": "3c9c97c775d2f4eef0926ce6116a1e2d9ed81104089b751436802685fccfbed3",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_time_aware_cifar100n.py": "19ad6416d3c34c6473b1c6772dbf02b9e5996f92434d736aeb0b09495735ee9d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "433568fe6c49c8fac67ddd3fe15638f17d9fb1fed0cbf49c3da49ded8a758e0b",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "f9f3201409659af10f28def07938d59da1c4fdf069e7bae25364511160cb114c",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "methods": [
+    "score_time",
+    "risk_per_second"
+  ],
+  "population_size": 6475,
+  "private_truth_rule": "worker complete frame set differs from singleton aligned FrameNet frame",
+  "protocol": "framenet_frame_v2_external_efficiency_confirmation_v1",
+  "protocol_file": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FRAMENET_FRAME_FORMAL_PROTOCOL.md",
+  "protocol_sha256": "059dadc0f55c5ccf729211399008dd770b8a85bad0e65fd0dd9a6665fdf6de93",
+  "public_archive": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\framenet_frame_disambiguation\\FrameDisambiguation-v1.0.zip",
+  "public_archive_sha256": "a46e37a33a043f5061fd461e9d72ae8bd285f7b37b2f98039cb73d47972d12c0",
+  "public_cost_cv": 1.5909947940735625,
+  "public_cost_sha256": "a3fc638c8772877fce11b8f8de926952711e44c265fc5c65cb8990d35d443858",
+  "public_minimum_opportunity": 0.9163295600278706,
+  "public_score_sha256": "b4d20472b884151155296d22740619abccf7049fcf64fe30a1aca3006ca08f50",
+  "public_score_time_ranking_sha256": "71bbc8110dfe3b1b4e8a46b19eaec8c29186071459221ef92ce38dfd5c5f15ef",
+  "record_sequence_sha256": "12c550509748b5e323764009db9863d66e4ff0ddd661d97b8c0a2fb941150ec7",
+  "response_rule": "exact complete normalized worker frame set",
+  "risk_rule": "leave-one-worker-out exact complete frame-set disagreement",
+  "selected_route": "risk_per_second",
+  "sentinel_count": 750,
+  "sentinel_fraction": 0.11583011583011583,
+  "sentinel_repetitions": 100,
+  "synthetic_method_dry_run": {
+    "row_count": 12,
+    "sha256": "cf81e4508e69be67db5ba00448fd411c40251c44811ccacb064628a99b3f4f66",
+    "status": "PASS"
+  },
+  "targets": [
+    0.35,
+    0.45,
+    0.55
+  ],
+  "time_budgets": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "truth_archive": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\framenet_frame_disambiguation\\private_truth_closed\\framenet_v17.zip",
+  "truth_archive_license": "CC-BY-3.0",
+  "truth_archive_sha256": "22f6aad6fb799ba4dbed0440714e1118442ad7d7345351de37428581284f471c",
+  "truth_key_rule": "exact UTF-8 sentence, target text, start, end-exclusive; XML end + 1",
+  "truth_loaded": false,
+  "unit_count": 433
+}

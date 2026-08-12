@@ -1,0 +1,6 @@
+gate_structure,cv_threshold,opportunity_threshold,route_by_seed,issued_safety,availability,unsafe_issued_rate,mean_excess_time_budget,mean_realized_excess_review_time,mean_realized_budget_overrun,mean_realized_union_time_fraction,passed
+always_score_time,0.5,0.4,"{0: 'score_time', 1: 'score_time', 2: 'score_time'}",1.0,1.0,0.0,0.044444444444444446,0.044089770666316315,-0.001192698591998696,0.15598109761974444,True
+always_risk_per_second,0.5,0.4,"{0: 'risk_per_second', 1: 'risk_per_second', 2: 'risk_per_second'}",1.0,1.0,0.0,0.06333333333333334,0.06146649845956779,-0.00588580958854758,0.12078208090010732,False
+cv_only,0.5,0.4,"{0: 'score_time', 1: 'score_time', 2: 'score_time'}",1.0,1.0,0.0,0.044444444444444446,0.044089770666316315,-0.001192698591998696,0.15598109761974444,True
+opportunity_only,0.5,0.4,"{0: 'score_time', 1: 'score_time', 2: 'score_time'}",1.0,1.0,0.0,0.044444444444444446,0.044089770666316315,-0.001192698591998696,0.15598109761974444,True
+cv_and_opportunity,0.5,0.4,"{0: 'score_time', 1: 'score_time', 2: 'score_time'}",1.0,1.0,0.0,0.044444444444444446,0.044089770666316315,-0.001192698591998696,0.15598109761974444,True

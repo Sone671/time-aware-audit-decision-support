@@ -1,0 +1,54 @@
+{
+  "decision": {
+    "cost_gate_at_least_0_25": true,
+    "development_go": true,
+    "mean_paired_time_reduction": 0.2968185692954252,
+    "methods_passed": 2,
+    "paired_count": 299
+  },
+  "formal_decision": {
+    "decision": "v2 external efficiency GO",
+    "external_efficiency_go": true,
+    "paired_count": 299,
+    "paired_time_reduction": 0.2968185692954252,
+    "selected_route": "risk_per_second",
+    "selected_route_pass": true
+  },
+  "methods": {
+    "risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.00065,
+      "mean_union_item_fraction": 0.062280982905982905,
+      "mean_union_time_fraction": 0.014645623566863459,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    },
+    "score_time": {
+      "availability": 1.0,
+      "issued_safety": 0.99,
+      "mean_excess_time_budget": 0.025501672240802676,
+      "mean_union_item_fraction": 0.06106303418803419,
+      "mean_union_time_fraction": 0.07020903451172536,
+      "passed": true,
+      "unsafe_issued_rate": 0.0033333333333333335
+    }
+  },
+  "truth_alignment": {
+    "ambiguous_public_image_count": 0,
+    "candidate_coverage_failure_record_count": 0,
+    "candidate_error_count": 10140,
+    "candidate_error_rate": 0.3317954255423579,
+    "error_count": 23444,
+    "error_rate": 0.38337257980115125,
+    "full_error_count": 13304,
+    "full_error_rate": 0.4348991533457553,
+    "header_status_reused_from_public_redaction": true,
+    "invalid_truth_row_count": 0,
+    "missing_public_image_count": 0,
+    "public_image_count": 400,
+    "public_redaction_private_values_decoded": false,
+    "raw_truth_row_count": 61227,
+    "truth_image_count": 400
+  }
+}

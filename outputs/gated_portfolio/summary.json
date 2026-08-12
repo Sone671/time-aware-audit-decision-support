@@ -1,0 +1,38 @@
+{
+  "cost_cv_gate": 0.5,
+  "datasets": {
+    "CIFAR-100N": {
+      "availability": 1.0,
+      "dataset": "CIFAR-100N",
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.03822222222222222,
+      "mean_paired_time_reduction": 0.41889168625573847,
+      "paired_count": 88,
+      "passed": true,
+      "public_cost_cv": 0.687836849383914,
+      "selected_method": "risk_per_second",
+      "unsafe_issued_rate": 0.0
+    },
+    "CIFAR-10N": {
+      "availability": 0.9777777777777777,
+      "dataset": "CIFAR-10N",
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.03988636363636364,
+      "mean_paired_time_reduction": 0.0,
+      "paired_count": 44,
+      "passed": true,
+      "public_cost_cv": 0.31739822832184345,
+      "selected_method": "score_time",
+      "unsafe_issued_rate": 0.0
+    }
+  },
+  "decision": {
+    "authorized_next_step": "fresh_external_annotation_time_dataset_only",
+    "datasets_passed": 2,
+    "development_go": true,
+    "mean_paired_time_reduction": 0.27926112417049237,
+    "paired_count": 132,
+    "time_reduction_at_least_0_25": true
+  },
+  "protocol": "heterogeneity_gated_time_aware_audit_v1"
+}

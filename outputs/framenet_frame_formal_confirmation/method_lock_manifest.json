@@ -1,0 +1,26 @@
+{
+  "design_pre_private_sha256": "36fc17dc5950e1977f51f0ac8d10658ab53e20a5aff4c281e57420beabfdf5f6",
+  "method_sha256_manifest": {
+    "G:\\eswa\\cost_aware_certification_2026-08-11\\src\\mfsc.py": "fd267819fa5e15293f98efac370e4b9f391cc7f10a20e049e6748bae97ae7e32",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\FRAMENET_FRAME_PUBLIC_RESULT.md": "aee630cb699d42b386e29c4159842ad462032c3cc043e76f6a9816158ae756a8",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FRAMENET_FRAME_FORMAL_PROTOCOL.md": "059dadc0f55c5ccf729211399008dd770b8a85bad0e65fd0dd9a6665fdf6de93",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FRAMENET_FRAME_PUBLIC_PROTOCOL.md": "16e6a004615a074868e2c439ec193092ce5607bff8e9fa647832a11e8dd2379d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\framenet_frame_public_screen\\public_screen.json": "bb85fa8032a454f2c48cdae1d04f379d63829b32ab157c2e481e37954058cb77",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\framenet_frame_formal_guard.py": "b7e488526969f3df94f3db514fe16dceec85523180d722c0cd0ca092e42aca9e",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\framenet_frame_public.py": "e0ea774d28e40f392dfe9b0333478e17ab105614bfcf5918d462155c54046a66",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_framenet_frame_formal_confirmation.py": "caee9a8e3d8302b45925e250ddfb42e8d4076d3cdc004e006fab74113c38630a",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_framenet_frame_public_screen.py": "3c9c97c775d2f4eef0926ce6116a1e2d9ed81104089b751436802685fccfbed3",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_time_aware_cifar100n.py": "19ad6416d3c34c6473b1c6772dbf02b9e5996f92434d736aeb0b09495735ee9d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "433568fe6c49c8fac67ddd3fe15638f17d9fb1fed0cbf49c3da49ded8a758e0b",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "f9f3201409659af10f28def07938d59da1c4fdf069e7bae25364511160cb114c",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "status": "LOCKED_PRE_PRIVATE",
+  "synthetic_method_dry_run": {
+    "row_count": 12,
+    "sha256": "cf81e4508e69be67db5ba00448fd411c40251c44811ccacb064628a99b3f4f66",
+    "status": "PASS"
+  },
+  "truth_loaded": false
+}

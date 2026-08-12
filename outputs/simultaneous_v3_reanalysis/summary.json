@@ -1,0 +1,240 @@
+{
+  "coverage": {
+    "budget_count": 7,
+    "certificate_alpha": 0.0071428571428571435,
+    "familywise_beta": 0.05,
+    "sentinel_planner": "unchanged public v2 planning heuristic",
+    "targets_share_upper_curve": true
+  },
+  "datasets": {
+    "cifar100n": {
+      "coverage": {
+        "budget_count": 7,
+        "certificate_alpha": 0.0071428571428571435,
+        "familywise_beta": 0.05,
+        "mode": "simultaneous_budget_grid_bonferroni",
+        "targets_share_upper_curve": true
+      },
+      "dataset": "cifar100n",
+      "decision": {
+        "mean_paired_time_reduction": 0.452949611465043,
+        "paired_count": 888,
+        "paired_time_gate_at_least_0_25": true,
+        "risk_per_second_go": true
+      },
+      "evidence_role": "old_data_development_reanalysis",
+      "method_go": true,
+      "methods": {
+        "risk_per_second": {
+          "availability": 1.0,
+          "issued_safety": 0.9966666666666667,
+          "mean_excess_time_budget": 0.030878754171301447,
+          "mean_union_item_fraction": 0.18185120000000002,
+          "mean_union_time_fraction": 0.08477508302341884,
+          "passed": true,
+          "unsafe_issued_rate": 0.0011111111111111111
+        },
+        "score_time": {
+          "availability": 0.9888888888888889,
+          "issued_safety": 0.9966666666666667,
+          "mean_excess_time_budget": 0.04195163104611924,
+          "mean_union_item_fraction": 0.1545671460674157,
+          "mean_union_time_fraction": 0.15355067523533605,
+          "passed": true,
+          "unsafe_issued_rate": 0.0011235955056179776
+        }
+      },
+      "population_size": 50000,
+      "selected_route": "risk_per_second",
+      "selected_route_pass": true,
+      "sentinel_count": 750,
+      "sentinel_repetitions": 100,
+      "simultaneous_v3_decision": "SIMULTANEOUS_V3_EFFICIENCY_GO",
+      "targets": [
+        0.3,
+        0.35,
+        0.4
+      ]
+    },
+    "cifar10n": {
+      "coverage": {
+        "budget_count": 7,
+        "certificate_alpha": 0.0071428571428571435,
+        "familywise_beta": 0.05,
+        "mode": "simultaneous_budget_grid_bonferroni",
+        "targets_share_upper_curve": true
+      },
+      "dataset": "cifar10n",
+      "decision": {
+        "mean_paired_time_reduction": null,
+        "paired_count": 0,
+        "paired_time_gate_at_least_0_25": false,
+        "risk_per_second_go": false
+      },
+      "evidence_role": "old_data_development_reanalysis",
+      "method_go": true,
+      "methods": {
+        "score_time": {
+          "availability": 0.9933333333333333,
+          "issued_safety": 0.99,
+          "mean_excess_time_budget": 0.03825280898876405,
+          "mean_union_item_fraction": 0.14753789709172258,
+          "mean_union_time_fraction": 0.14728134158523296,
+          "passed": true,
+          "unsafe_issued_rate": 0.0044742729306487695
+        }
+      },
+      "population_size": 50000,
+      "selected_route": "score_time",
+      "selected_route_pass": true,
+      "sentinel_count": 750,
+      "sentinel_repetitions": 100,
+      "simultaneous_v3_decision": "SIMULTANEOUS_V3_FALLBACK_GO",
+      "targets": [
+        0.3,
+        0.35,
+        0.4
+      ]
+    },
+    "satbench": {
+      "coverage": {
+        "budget_count": 7,
+        "certificate_alpha": 0.0071428571428571435,
+        "familywise_beta": 0.05,
+        "mode": "simultaneous_budget_grid_bonferroni",
+        "targets_share_upper_curve": true
+      },
+      "dataset": "satbench",
+      "decision": {
+        "mean_paired_time_reduction": null,
+        "paired_count": 0,
+        "paired_time_gate_at_least_0_25": false,
+        "risk_per_second_go": false
+      },
+      "evidence_role": "post_unlock_corrected_fallback_validation",
+      "method_go": true,
+      "methods": {
+        "score_time": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.04595,
+          "mean_union_item_fraction": 0.10367820589386106,
+          "mean_union_time_fraction": 0.08638753764259777,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        }
+      },
+      "population_size": 97118,
+      "selected_route": "score_time",
+      "selected_route_pass": true,
+      "sentinel_count": 750,
+      "sentinel_repetitions": 100,
+      "simultaneous_v3_decision": "SIMULTANEOUS_V3_FALLBACK_GO",
+      "targets": [
+        0.35,
+        0.45,
+        0.55
+      ]
+    },
+    "storylines": {
+      "coverage": {
+        "budget_count": 7,
+        "certificate_alpha": 0.0071428571428571435,
+        "familywise_beta": 0.05,
+        "mode": "simultaneous_budget_grid_bonferroni",
+        "targets_share_upper_curve": true
+      },
+      "dataset": "storylines",
+      "decision": {
+        "mean_paired_time_reduction": null,
+        "paired_count": 0,
+        "paired_time_gate_at_least_0_25": false,
+        "risk_per_second_go": false
+      },
+      "evidence_role": "old_data_development_reanalysis",
+      "method_go": true,
+      "methods": {
+        "score_time": {
+          "availability": 0.6966666666666667,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.040430622009569386,
+          "mean_union_item_fraction": 0.25358421064934716,
+          "mean_union_time_fraction": 0.2518761733641253,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        }
+      },
+      "population_size": 7778,
+      "selected_route": "score_time",
+      "selected_route_pass": true,
+      "sentinel_count": 1500,
+      "sentinel_repetitions": 100,
+      "simultaneous_v3_decision": "SIMULTANEOUS_V3_FALLBACK_GO",
+      "targets": [
+        0.15,
+        0.2,
+        0.25
+      ]
+    },
+    "whichdog": {
+      "coverage": {
+        "budget_count": 7,
+        "certificate_alpha": 0.0071428571428571435,
+        "familywise_beta": 0.05,
+        "mode": "simultaneous_budget_grid_bonferroni",
+        "targets_share_upper_curve": true
+      },
+      "dataset": "whichdog",
+      "decision": {
+        "mean_paired_time_reduction": 0.3030895011380409,
+        "paired_count": 300,
+        "paired_time_gate_at_least_0_25": true,
+        "risk_per_second_go": true
+      },
+      "evidence_role": "post_unlock_corrected_validation",
+      "method_go": true,
+      "methods": {
+        "risk_per_second": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.0011333333333333332,
+          "mean_union_item_fraction": 0.06566926129426129,
+          "mean_union_time_fraction": 0.015122817248306426,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        },
+        "score_time": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.02828333333333333,
+          "mean_union_item_fraction": 0.06359421332635617,
+          "mean_union_time_fraction": 0.07320688972910672,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        }
+      },
+      "population_size": 61152,
+      "selected_route": "risk_per_second",
+      "selected_route_pass": true,
+      "sentinel_count": 750,
+      "sentinel_repetitions": 100,
+      "simultaneous_v3_decision": "SIMULTANEOUS_V3_EFFICIENCY_GO",
+      "targets": [
+        0.35,
+        0.45,
+        0.55
+      ]
+    }
+  },
+  "evidence_boundary": "All v3 runs occur after the corresponding truths were opened; they are corrected reanalyses, not fresh external confirmations.",
+  "method_sha256_manifest": {
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\SIMULTANEOUS_V3_PROTOCOL.md": "d6e93d4286fe7f9d3e6b7923987842dbde3ab1967b38101c0259c6828a8c7275",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_simultaneous_v3.py": "c5b63fad855c64b680f84bcedc77f0236189938af4cf474f3d7c8a11575158b0",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\simultaneous_v3.py": "810a06281c6dc85a23558d452413ab7f21ab427049783dc8fd5623d856424056",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "f9f3201409659af10f28def07938d59da1c4fdf069e7bae25364511160cb114c",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "protocol": "simultaneous_v3_post_unlock_reanalysis_v1",
+  "protocol_file": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\SIMULTANEOUS_V3_PROTOCOL.md",
+  "protocol_sha256": "d6e93d4286fe7f9d3e6b7923987842dbde3ab1967b38101c0259c6828a8c7275"
+}

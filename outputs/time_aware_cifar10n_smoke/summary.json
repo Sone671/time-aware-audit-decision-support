@@ -1,0 +1,29 @@
+{
+  "decision": {
+    "cost_gate_at_least_0_25": false,
+    "development_go": false,
+    "mean_paired_time_reduction": 0.15403236735177595,
+    "methods_passed": 1,
+    "paired_count": 44
+  },
+  "methods": {
+    "risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.06633333333333333,
+      "mean_union_item_fraction": 0.16894844444444443,
+      "mean_union_time_fraction": 0.12512119265491803,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "score_time": {
+      "availability": 0.9777777777777777,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.03988636363636364,
+      "mean_union_item_fraction": 0.1464372727272727,
+      "mean_union_time_fraction": 0.14618555244321735,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    }
+  }
+}

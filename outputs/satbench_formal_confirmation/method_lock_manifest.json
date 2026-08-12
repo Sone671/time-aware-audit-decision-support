@@ -1,0 +1,20 @@
+{
+  "design_pre_private_sha256": "4b767350900987185d3ba7662902a0f6cff36f4a5a5b25bae0caaab7fbbbdcde",
+  "method_sha256_manifest": {
+    "G:\\eswa\\cost_aware_certification_2026-08-11\\src\\mfsc.py": "fd267819fa5e15293f98efac370e4b9f391cc7f10a20e049e6748bae97ae7e32",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_CANDIDATE_PROTOCOL.md": "3dc2d21be13ad39f6ac2bafa080dc026df3443e873f757498cc7e8ec707e89f7",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FORMAL_CONFIRMATION_PROTOCOL.md": "cb8db235ce764645de00062f331aba8b61a0d2e59f9d64a5704199a1a42c8070",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\satbench_public_audit\\public_audit.json": "03772eaebdbd46b4ac1635633d2c888e81e014c9aa4209276a0bf13ba164aee6",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\formal_data_guard.py": "f8ae2b181cc4e9571592d715565de330e40af3ac471b57ff0e06980c5586f757",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_satbench_formal_confirmation.py": "51b3ad1bc92725b5522596502398b646ef4e2dadb8aef1ac2b4dea9430f25ec5",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_satbench_public_audit.py": "e5bc16a0cf562ce5f68aa537e625faccadefc18f50b37ec72837fad7c3816cc8",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_time_aware_cifar100n.py": "19ad6416d3c34c6473b1c6772dbf02b9e5996f92434d736aeb0b09495735ee9d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "2be15a31f1bd37728749e5e3b61de10b9356142d46251bfab0543b5b7692ccd5",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\satbench_public.py": "d925b81979b710980f42678b35fc90e08fa1063ef514b01f3df20b32c6653acd",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "1e842867fff09fc2e2b219f2de3777d4128e9e7111af2a02cba2d7118f7108fe",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "status": "LOCKED_PRE_PRIVATE",
+  "truth_loaded": false
+}

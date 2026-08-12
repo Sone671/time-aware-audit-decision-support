@@ -1,0 +1,16 @@
+{
+  "decision": "SATBench fallback-safety GO",
+  "efficiency_confirmation": "NOT TESTED (public abstention)",
+  "files": {
+    "SATBENCH_FORMAL_CONFIRMATION_RESULT.md": "51308f67c07f0b16f4860a3a91c1081ed3fe4a80cfcc24bc6e65cd80bf38d68f",
+    "design.json": "17ef8a877112c01f0430f5c34b7b6f68de465532de04c012b24fe7cad6b233ee",
+    "design_pre_private.json": "9d95f2bb9ec2edcdb44da43aa7360c20626f1282d271a904912f62791650e32f",
+    "method_lock_manifest.json": "e371a3a842ded966dfacea89e32e25a847013f9e90d6ce1f396191076eed7109",
+    "recommendations.csv": "c10138b68490037b321e09f7f52f9bf8cf466d82163068ed2fb9066a9efa057b",
+    "summary.json": "a86a933d34487b9e255c442c4cfd113f616b4d25efcc7f36a3408ddb26bafc72"
+  },
+  "formal_episode_count": 300,
+  "method_hash_mismatch_count": 0,
+  "truth_field_used": "correct (boolean only)",
+  "unselected_route_evaluated": false
+}

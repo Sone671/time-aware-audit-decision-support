@@ -1,0 +1,38 @@
+{
+  "confirmation": {
+    "dataset": "ImageNet-16H-human-decisions",
+    "passed": false,
+    "population_size": 28997,
+    "private_error_count": 6272,
+    "private_error_rate": 0.21629823774873264,
+    "public_cost_cv": 4.695001490569255,
+    "selected_method": "risk_per_second"
+  },
+  "decision": {
+    "cost_gate_at_least_0_25": true,
+    "development_go": false,
+    "mean_paired_time_reduction": 0.3945784354949075,
+    "methods_passed": 0,
+    "paired_count": 179
+  },
+  "methods": {
+    "risk_per_second": {
+      "availability": 0.9766666666666667,
+      "issued_safety": 0.99,
+      "mean_excess_time_budget": 0.06011986301369863,
+      "mean_union_item_fraction": 0.18207308958994345,
+      "mean_union_time_fraction": 0.11066450892435892,
+      "passed": false,
+      "unsafe_issued_rate": 0.0034129692832764505
+    },
+    "score_time": {
+      "availability": 0.6,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.08169444444444446,
+      "mean_union_item_fraction": 0.07614274273583856,
+      "mean_union_time_fraction": 0.1217048619466813,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    }
+  }
+}

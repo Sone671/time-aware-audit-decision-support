@@ -1,0 +1,19 @@
+{
+  "design_pre_private_sha256": "0afeef3409546648d1f2c01c386b1cdc9345daf9fac8b65573f88f7c49f08ad0",
+  "method_sha256_manifest": {
+    "G:\\eswa\\cost_aware_certification_2026-08-11\\src\\mfsc.py": "fd267819fa5e15293f98efac370e4b9f391cc7f10a20e049e6748bae97ae7e32",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_CROWDTRUTH_NER_FORMAL_PROTOCOL.md": "8f83df1253dfd088fc57bc694f453108ea37dea7e286b37bf802697f166bfc65",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FRESH_EFFICIENCY_SCREEN_PROTOCOL.md": "3622d1cfbce66c9347e5c9f3258e5ebbf1fb8297d767464ab4a9e37ba7c2a9da",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\crowdtruth_named_entity_public_screen\\public_screen.json": "ddcf343570a4cc7a1fa1d6a5ff7c7d933e3bd22353ee47f4f64940c43a9c00d9",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\crowdtruth_named_entity_public.py": "cfe6d01d2087f92cb9cd4f78b60928c0894ba5e5f2d1a466e9bffe5c22e808f3",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\crowdtruth_ner_formal_guard.py": "52c68c9ed6578b68cf4fda1290ab8f97528f2cc5bce5154fbd9d6f91bad8f9c3",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_crowdtruth_named_entity_public_screen.py": "32eb530914f19cbf0e98dd5c6ead02688b2ae18375671aace04f06fa014007a6",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_crowdtruth_ner_formal_confirmation.py": "d390f20ec38943b9b23b1b3a05e13c5abd3c8dd41d67bc9245da77fa4a10d0d7",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_time_aware_cifar100n.py": "19ad6416d3c34c6473b1c6772dbf02b9e5996f92434d736aeb0b09495735ee9d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "1e842867fff09fc2e2b219f2de3777d4128e9e7111af2a02cba2d7118f7108fe",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "status": "LOCKED_PRE_PRIVATE",
+  "truth_loaded": false
+}

@@ -1,0 +1,42 @@
+{
+  "cost_metadata": {
+    "cost_rule": "median of three worker times divided equally over ten images",
+    "max_seconds_per_record": 11.4,
+    "mean_seconds_per_record": 4.452139999999999,
+    "median_worker_batch_seconds_sum": 222607.0,
+    "min_seconds_per_record": 1.3,
+    "side_info_rows": 5000,
+    "total_amortized_seconds": 222606.99999999994
+  },
+  "cost_source": "G:\\latent_group_verification_mvp\\data\\cifar100n_source\\side_info_cifar10N.csv",
+  "cost_source_sha256": "50fcbe619a003d0b804a20ece51447dcdb48978c60e1202371d08302b2e14351",
+  "dataset": "CIFAR-10N",
+  "feature_source": "G:\\eswa\\audited_noise_risk_calibration_go_nogo_2026-07-24\\external_cifar10n_2026-07-24\\data\\cifar10\\cifar10_train_resnet18_imagenet1k_v1.npy",
+  "feature_source_sha256": "8e40961d91a6c143eccaeb67b7840a327935f4a22f2f1199ee93003bc333f141",
+  "image_order_sha256": "db41bd6c919c154739e796d50ea811feffc77a8ab13a72639b9806cf708f1724",
+  "model": "multiclass LogisticRegression(C=1, lbfgs, 80/20 noisy-label split)",
+  "noisy_label_source_sha256": "873e69c39cb9b5e97fb6bae2d60bb59b38a5cbc31d2b868f7903dcb2b9dd2310",
+  "parent_protocol": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\PROTOCOL.md",
+  "parent_protocol_sha256": "56e626b91113f830fc0bb8e6384d5924b032f21e0fcd013e9397897505ca9e95",
+  "private_clean_label_role": "old-seed development evaluation only",
+  "protocol": "time_aware_audit_decision_support_cifar10n_v1",
+  "ranking_hashes": {
+    "0": {
+      "ranking_sha256": "eec151d9d6c2f9683674f14ed6554420a3e309c423acab2eab7484a266f2c577",
+      "score_sha256": "ef0570ab22307471c44f3ed76a89261bc336b2df4a904048bf82cb934574a55b"
+    },
+    "1": {
+      "ranking_sha256": "9f3b1d37f29fd788c48f6975a21d49070871d6ac2af98e8c19140c6d2deb5954",
+      "score_sha256": "a05290cda3578e298fc660ad5247d4da0d62c0a969e646084a29ac76fdd43bb7"
+    },
+    "2": {
+      "ranking_sha256": "785914d5616e38fe5301d5b852e233cf2f17354476fc82b6eab425d7dbc68fca",
+      "score_sha256": "c992805705c41a973a7085a8f6716cd1db4212aac071379b2e996a053437c8f9"
+    }
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ]
+}

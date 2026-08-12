@@ -1,0 +1,767 @@
+{
+  "evidence_role": "old_data_development_replay_not_external_confirmation",
+  "experimental_design": {
+    "cost_noise_log_sigmas": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "main_repetitions_per_score_seed": 100,
+    "noise_perturbations": 10,
+    "rank_displacement_fractions": [
+      0.0,
+      0.01,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "repetitions_per_noise_perturbation": 10,
+    "sentinel_count": 750,
+    "strong_baselines": [
+      "score_time",
+      "cost_ascending",
+      "random_order",
+      "retrospective_recorded_cost_rps_upper_reference"
+    ],
+    "targets": [
+      0.3,
+      0.35,
+      0.4
+    ]
+  },
+  "factual_cost_role": "used only after public order/prefix selection to calculate realized workload and replay the exact certificate",
+  "forecast_rule": "five-fold leave-fold-out worker empirical-Bayes log-duration predictor; each batch forecast excludes its own recorded duration",
+  "gate_ablation": [
+    {
+      "availability": 1.0,
+      "cost_cv_threshold": 0.25,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.05665,
+      "mean_realized_budget_overrun": -0.00563316482321153,
+      "mean_realized_excess_review_time": 0.0550358098915705,
+      "mean_realized_union_time_fraction": 0.11447007413115966,
+      "opportunity_threshold": 0.2,
+      "passed": false,
+      "route_by_seed": {
+        "0": "risk_per_second",
+        "1": "risk_per_second",
+        "2": "risk_per_second"
+      },
+      "route_pattern": "RPS/RPS/RPS",
+      "rps_seed_count": 3,
+      "unsafe_issued_rate": 0.0
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.25,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.3,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.25,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.4,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.25,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.5,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.25,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.6,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.5,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.2,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.5,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.3,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.5,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.4,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.5,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.5,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.5,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.6,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.75,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.2,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.75,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.3,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.75,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.4,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.75,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.5,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 0.75,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.6,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.2,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.3,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.4,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.5,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    {
+      "availability": 0.9888888888888889,
+      "cost_cv_threshold": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "opportunity_threshold": 0.6,
+      "passed": true,
+      "route_by_seed": {
+        "0": "score_time",
+        "1": "score_time",
+        "2": "score_time"
+      },
+      "route_pattern": "ST/ST/ST",
+      "rps_seed_count": 0,
+      "unsafe_issued_rate": 0.0011235955056179776
+    }
+  ],
+  "method_sha256": {
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\predicted_cost_v3.py": "a6637848abfa07dc91e2ba5e0073f304487da27937b706b407da693e9eff6370",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_predicted_cost_sensitivity.py": "0c9c8c1f5c27513283386af4b4a092e5ab771ffe365be5870ae95013726b47f9",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\simultaneous_v3.py": "810a06281c6dc85a23558d452413ab7f21ab427049783dc8fd5623d856424056",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "f9f3201409659af10f28def07938d59da1c4fdf069e7bae25364511160cb114c"
+  },
+  "operating": {
+    "cost_noise_sigma_0.25::risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.050261401557285874,
+      "mean_realized_budget_overrun": 0.011582877899514853,
+      "mean_realized_excess_review_time": 0.05559129985436979,
+      "mean_realized_union_time_fraction": 0.12504738947626484,
+      "passed": false,
+      "unsafe_issued_rate": 0.0011111111111111111
+    },
+    "cost_noise_sigma_0.25::score_time": {
+      "availability": 0.9766666666666667,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04560364464692482,
+      "mean_realized_budget_overrun": -0.0011122461913594687,
+      "mean_realized_excess_review_time": 0.04530488875317451,
+      "mean_realized_union_time_fraction": 0.1548254493046501,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011376564277588168
+    },
+    "cost_noise_sigma_0.50::risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.03512791991101223,
+      "mean_realized_budget_overrun": 0.045356273133607954,
+      "mean_realized_excess_review_time": 0.054497839022277256,
+      "mean_realized_union_time_fraction": 0.13355203012713482,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011111111111111111
+    },
+    "cost_noise_sigma_0.50::score_time": {
+      "availability": 0.9766666666666667,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.045774487471526196,
+      "mean_realized_budget_overrun": -0.0011278158628967758,
+      "mean_realized_excess_review_time": 0.04547754086499174,
+      "mean_realized_union_time_fraction": 0.15497718727102447,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011376564277588168
+    },
+    "cost_noise_sigma_0.75::risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.03138487208008899,
+      "mean_realized_budget_overrun": 0.08258397806856246,
+      "mean_realized_excess_review_time": 0.07011284993131132,
+      "mean_realized_union_time_fraction": 0.15017358370463418,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011111111111111111
+    },
+    "cost_noise_sigma_0.75::score_time": {
+      "availability": 0.9777777777777777,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04593856655290102,
+      "mean_realized_budget_overrun": -0.0011724221734257224,
+      "mean_realized_excess_review_time": 0.04563759041491369,
+      "mean_realized_union_time_fraction": 0.15520839621505242,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011363636363636363
+    },
+    "rank_jitter_0.01::risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.05805555555555556,
+      "mean_realized_budget_overrun": -0.005756336748891487,
+      "mean_realized_excess_review_time": 0.05636252481123131,
+      "mean_realized_union_time_fraction": 0.11573854333512607,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "rank_jitter_0.01::score_time": {
+      "availability": 0.9766666666666667,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04543280182232346,
+      "mean_realized_budget_overrun": -0.0011353536396599404,
+      "mean_realized_excess_review_time": 0.04511639884025584,
+      "mean_realized_union_time_fraction": 0.15463418189739647,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011376564277588168
+    },
+    "rank_jitter_0.05::risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.060994444444444455,
+      "mean_realized_budget_overrun": -0.005583702024369636,
+      "mean_realized_excess_review_time": 0.05918220011522699,
+      "mean_realized_union_time_fraction": 0.11880766034365163,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "rank_jitter_0.05::score_time": {
+      "availability": 0.9766666666666667,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04543280182232346,
+      "mean_realized_budget_overrun": -0.0011353536396599404,
+      "mean_realized_excess_review_time": 0.04511639884025584,
+      "mean_realized_union_time_fraction": 0.15463418189739647,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011376564277588168
+    },
+    "rank_jitter_0.10::risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.0660888888888889,
+      "mean_realized_budget_overrun": -0.004796154774772682,
+      "mean_realized_excess_review_time": 0.06430409865021829,
+      "mean_realized_union_time_fraction": 0.12460232921085192,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "rank_jitter_0.10::score_time": {
+      "availability": 0.9766666666666667,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04543280182232346,
+      "mean_realized_budget_overrun": -0.0011353536396599404,
+      "mean_realized_excess_review_time": 0.04511639884025584,
+      "mean_realized_union_time_fraction": 0.15463418189739647,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011376564277588168
+    },
+    "rank_jitter_0.20::risk_per_second": {
+      "availability": 0.9955555555555555,
+      "issued_safety": 0.99,
+      "mean_excess_time_budget": 0.05022396416573349,
+      "mean_realized_budget_overrun": -0.0035600336252388,
+      "mean_realized_excess_review_time": 0.04885124760471402,
+      "mean_realized_union_time_fraction": 0.13816988989246756,
+      "passed": false,
+      "unsafe_issued_rate": 0.0033482142857142855
+    },
+    "rank_jitter_0.20::score_time": {
+      "availability": 0.9766666666666667,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04543280182232346,
+      "mean_realized_budget_overrun": -0.0011353536396599404,
+      "mean_realized_excess_review_time": 0.04511639884025584,
+      "mean_realized_union_time_fraction": 0.15463418189739647,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011376564277588168
+    },
+    "recorded_cost_oracle::cost_ascending": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.06278888888888891,
+      "mean_realized_budget_overrun": -4.394557081571659e-06,
+      "mean_realized_excess_review_time": 0.06278827723204262,
+      "mean_realized_union_time_fraction": 0.12605944842382036,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "recorded_cost_oracle::random_order": {
+      "availability": 0.44666666666666666,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.10139650872817954,
+      "mean_realized_budget_overrun": -1.6281045878905623e-05,
+      "mean_realized_excess_review_time": 0.1013856195567223,
+      "mean_realized_union_time_fraction": 0.1643628493478604,
+      "passed": false,
+      "unsafe_issued_rate": 0.0024875621890547263
+    },
+    "recorded_cost_oracle::risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.030878754171301447,
+      "mean_realized_budget_overrun": -4.240621388917823e-06,
+      "mean_realized_excess_review_time": 0.030877587076561307,
+      "mean_realized_union_time_fraction": 0.08477508302341884,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011111111111111111
+    },
+    "recorded_cost_oracle::score_time": {
+      "availability": 0.9888888888888889,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04195163104611924,
+      "mean_realized_budget_overrun": -1.8953476811517434e-05,
+      "mean_realized_excess_review_time": 0.0419442274095281,
+      "mean_realized_union_time_fraction": 0.15355067523533605,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011235955056179776
+    },
+    "worker_oof_prediction::cost_ascending": {
+      "availability": 0.8622222222222222,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.06068298969072165,
+      "mean_realized_budget_overrun": -0.011794861931758695,
+      "mean_realized_excess_review_time": 0.05513729710354333,
+      "mean_realized_union_time_fraction": 0.12685323770096352,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "worker_oof_prediction::random_order": {
+      "availability": 0.4477777777777778,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.10039800995024875,
+      "mean_realized_budget_overrun": 0.0006037939260719077,
+      "mean_realized_excess_review_time": 0.10078331726902837,
+      "mean_realized_union_time_fraction": 0.16435911542367115,
+      "passed": false,
+      "unsafe_issued_rate": 0.0024813895781637717
+    },
+    "worker_oof_prediction::risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.05665,
+      "mean_realized_budget_overrun": -0.00563316482321153,
+      "mean_realized_excess_review_time": 0.0550358098915705,
+      "mean_realized_union_time_fraction": 0.11447007413115966,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "worker_oof_prediction::score_time": {
+      "availability": 0.9888888888888889,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04268278965129359,
+      "mean_realized_budget_overrun": -0.001130414739310126,
+      "mean_realized_excess_review_time": 0.04238281583560931,
+      "mean_realized_union_time_fraction": 0.15317443867325634,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011235955056179776
+    }
+  },
+  "paired_realized_union_time_reductions": [
+    {
+      "baseline": "score_time",
+      "common_safe_cells": 878,
+      "mean_paired_realized_union_time_reduction": 0.23413038643371467,
+      "scenario": "cost_noise_sigma_0.25",
+      "treatment": "risk_per_second"
+    },
+    {
+      "baseline": "score_time",
+      "common_safe_cells": 877,
+      "mean_paired_realized_union_time_reduction": 0.1740869152256961,
+      "scenario": "cost_noise_sigma_0.50",
+      "treatment": "risk_per_second"
+    },
+    {
+      "baseline": "score_time",
+      "common_safe_cells": 879,
+      "mean_paired_realized_union_time_reduction": 0.04942320190642341,
+      "scenario": "cost_noise_sigma_0.75",
+      "treatment": "risk_per_second"
+    },
+    {
+      "baseline": "score_time",
+      "common_safe_cells": 878,
+      "mean_paired_realized_union_time_reduction": 0.2844243286534253,
+      "scenario": "rank_jitter_0.01",
+      "treatment": "risk_per_second"
+    },
+    {
+      "baseline": "score_time",
+      "common_safe_cells": 878,
+      "mean_paired_realized_union_time_reduction": 0.25361384910824397,
+      "scenario": "rank_jitter_0.05",
+      "treatment": "risk_per_second"
+    },
+    {
+      "baseline": "score_time",
+      "common_safe_cells": 878,
+      "mean_paired_realized_union_time_reduction": 0.20573404651549104,
+      "scenario": "rank_jitter_0.10",
+      "treatment": "risk_per_second"
+    },
+    {
+      "baseline": "score_time",
+      "common_safe_cells": 874,
+      "mean_paired_realized_union_time_reduction": 0.1095723546956432,
+      "scenario": "rank_jitter_0.20",
+      "treatment": "risk_per_second"
+    },
+    {
+      "baseline": "score_time",
+      "common_safe_cells": 888,
+      "mean_paired_realized_union_time_reduction": 0.452949611465043,
+      "scenario": "recorded_cost_oracle",
+      "treatment": "risk_per_second"
+    },
+    {
+      "baseline": "score_time",
+      "common_safe_cells": 889,
+      "mean_paired_realized_union_time_reduction": 0.28093045074804474,
+      "scenario": "worker_oof_prediction",
+      "treatment": "risk_per_second"
+    }
+  ],
+  "prediction_metadata": {
+    "batch_count": 10000,
+    "cost_rank_spearman": 0.7136996445688197,
+    "cost_rule": "OOF worker shrinkage on batch seconds, divided by five",
+    "folds": 5,
+    "log_rmse": 0.46242958711294474,
+    "median_absolute_percentage_error": 0.29677499493640586,
+    "prior_strength": 5.0,
+    "seed": 20260812,
+    "unseen_worker_batches": 171,
+    "unseen_worker_fraction": 0.0171,
+    "worker_count": 519
+  },
+  "protocol": "predicted_cost_simultaneous_v3_development_sensitivity_v1",
+  "public_cost_reference": {
+    "cost_cv": 0.687836849383914,
+    "mean_opportunity": 0.6448161187350364,
+    "minimum_opportunity": 0.4568841367018196,
+    "per_seed": [
+      {
+        "budget_savings": {
+          "0.005": 0.7498147690787849,
+          "0.01": 0.7356352181335024,
+          "0.02": 0.7072084755904406,
+          "0.05": 0.6402793372779401,
+          "0.1": 0.5743253587674768,
+          "0.2": 0.4568841367018196
+        },
+        "mean_saving": 0.6440245492583274,
+        "minimum_saving": 0.4568841367018196
+      },
+      {
+        "budget_savings": {
+          "0.005": 0.7575276778788521,
+          "0.01": 0.7325054243327633,
+          "0.02": 0.709996918607211,
+          "0.05": 0.6444783138212877,
+          "0.1": 0.5741609279553415,
+          "0.2": 0.46049651667578906
+        },
+        "mean_saving": 0.6465276298785407,
+        "minimum_saving": 0.46049651667578906
+      },
+      {
+        "budget_savings": {
+          "0.005": 0.7435400289068284,
+          "0.01": 0.7376419152386997,
+          "0.02": 0.7099786787898013,
+          "0.05": 0.6409766028113257,
+          "0.1": 0.5736100186697499,
+          "0.2": 0.4576298179930415
+        },
+        "mean_saving": 0.643896177068241,
+        "minimum_saving": 0.4576298179930415
+      }
+    ]
+  }
+}

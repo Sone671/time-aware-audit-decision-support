@@ -1,0 +1,38 @@
+{
+  "confirmation": {
+    "dataset": "CIFAR-10H-record-level",
+    "passed": false,
+    "population_size": 514188,
+    "private_error_count": 26355,
+    "private_error_rate": 0.05125557189199281,
+    "public_cost_cv": 6.004087044635427,
+    "selected_method": "risk_per_second"
+  },
+  "decision": {
+    "cost_gate_at_least_0_25": false,
+    "development_go": false,
+    "mean_paired_time_reduction": 0.192100593899379,
+    "methods_passed": 2,
+    "paired_count": 300
+  },
+  "methods": {
+    "risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.00995,
+      "mean_union_item_fraction": 0.015064943820807433,
+      "mean_union_time_fraction": 0.0125671579770281,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    },
+    "score_time": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.019450000000000002,
+      "mean_union_item_fraction": 0.014029246112316898,
+      "mean_union_time_fraction": 0.02205398686144297,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    }
+  }
+}

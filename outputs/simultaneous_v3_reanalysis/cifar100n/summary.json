@@ -1,0 +1,49 @@
+{
+  "coverage": {
+    "budget_count": 7,
+    "certificate_alpha": 0.0071428571428571435,
+    "familywise_beta": 0.05,
+    "mode": "simultaneous_budget_grid_bonferroni",
+    "targets_share_upper_curve": true
+  },
+  "dataset": "cifar100n",
+  "decision": {
+    "mean_paired_time_reduction": 0.452949611465043,
+    "paired_count": 888,
+    "paired_time_gate_at_least_0_25": true,
+    "risk_per_second_go": true
+  },
+  "evidence_role": "old_data_development_reanalysis",
+  "method_go": true,
+  "methods": {
+    "risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.030878754171301447,
+      "mean_union_item_fraction": 0.18185120000000002,
+      "mean_union_time_fraction": 0.08477508302341884,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011111111111111111
+    },
+    "score_time": {
+      "availability": 0.9888888888888889,
+      "issued_safety": 0.9966666666666667,
+      "mean_excess_time_budget": 0.04195163104611924,
+      "mean_union_item_fraction": 0.1545671460674157,
+      "mean_union_time_fraction": 0.15355067523533605,
+      "passed": true,
+      "unsafe_issued_rate": 0.0011235955056179776
+    }
+  },
+  "population_size": 50000,
+  "selected_route": "risk_per_second",
+  "selected_route_pass": true,
+  "sentinel_count": 750,
+  "sentinel_repetitions": 100,
+  "simultaneous_v3_decision": "SIMULTANEOUS_V3_EFFICIENCY_GO",
+  "targets": [
+    0.3,
+    0.35,
+    0.4
+  ]
+}

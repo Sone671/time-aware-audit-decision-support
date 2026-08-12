@@ -1,0 +1,8 @@
+numpy
+pandas
+scipy
+torch
+pytest
+
+# Optional runners only:
+# scikit-learn

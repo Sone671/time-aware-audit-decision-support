@@ -1,0 +1,27 @@
+{
+  "decision": {
+    "cost_gate_at_least_0_25": false,
+    "development_go": false,
+    "mean_paired_time_reduction": NaN,
+    "methods_passed": 1,
+    "paired_count": 0
+  },
+  "formal_decision": {
+    "decision": "SATBench fallback-safety GO",
+    "efficiency_confirmation": "NOT TESTED (public abstention)",
+    "fallback_safety_go": true,
+    "selected_route": "score_time",
+    "unselected_route_evaluated": false
+  },
+  "methods": {
+    "score_time": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.0425,
+      "mean_union_item_fraction": 0.09957621999354735,
+      "mean_union_time_fraction": 0.08296415456126152,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    }
+  }
+}

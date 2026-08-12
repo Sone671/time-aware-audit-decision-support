@@ -1,0 +1,154 @@
+{
+  "base_seed": 20260812,
+  "bootstrap_repetitions": 5000,
+  "cluster_unit": "score seed and sentinel repetition",
+  "datasets": {
+    "cifar100n": {
+      "operating": {
+        "availability": [
+          1.0,
+          1.0
+        ],
+        "cluster_count": 300,
+        "mean_excess_time_budget": [
+          0.02825541666666669,
+          0.03361522856378412
+        ],
+        "mean_union_time_fraction": [
+          0.08219323778724366,
+          0.08747162149375476
+        ],
+        "safety": [
+          0.99,
+          1.0
+        ],
+        "unsafe_issued_rate": [
+          0.0,
+          0.0033333333333333335
+        ]
+      },
+      "paired": {
+        "cluster_count": 300,
+        "mean_paired_time_reduction": [
+          0.4420251805672984,
+          0.46330189644655373
+        ]
+      },
+      "selected_route": "risk_per_second"
+    },
+    "cifar10n": {
+      "operating": {
+        "availability": [
+          0.9877777777777778,
+          0.9977777777777778
+        ],
+        "cluster_count": 300,
+        "mean_excess_time_budget": [
+          0.03517395210032391,
+          0.041480100896860925
+        ],
+        "mean_union_time_fraction": [
+          0.1446404847322296,
+          0.15003540393289974
+        ],
+        "safety": [
+          0.9766666666666667,
+          1.0
+        ],
+        "unsafe_issued_rate": [
+          0.0,
+          0.011123780196258645
+        ]
+      },
+      "paired": null,
+      "selected_route": "score_time"
+    },
+    "satbench": {
+      "operating": {
+        "availability": [
+          1.0,
+          1.0
+        ],
+        "cluster_count": 100,
+        "mean_excess_time_budget": [
+          0.04276666666666671,
+          0.04891666666666672
+        ],
+        "mean_union_time_fraction": [
+          0.08324518877430313,
+          0.08932402166173516
+        ],
+        "safety": [
+          1.0,
+          1.0
+        ],
+        "unsafe_issued_rate": [
+          0.0,
+          0.0
+        ]
+      },
+      "paired": null,
+      "selected_route": "score_time"
+    },
+    "storylines": {
+      "operating": {
+        "availability": [
+          0.68,
+          0.7166666666666667
+        ],
+        "cluster_count": 100,
+        "mean_excess_time_budget": [
+          0.03509377539044867,
+          0.04610603762135926
+        ],
+        "mean_union_time_fraction": [
+          0.24786154395367616,
+          0.2560711991903603
+        ],
+        "safety": [
+          1.0,
+          1.0
+        ],
+        "unsafe_issued_rate": [
+          0.0,
+          0.0
+        ]
+      },
+      "paired": null,
+      "selected_route": "score_time"
+    },
+    "whichdog": {
+      "operating": {
+        "availability": [
+          1.0,
+          1.0
+        ],
+        "cluster_count": 100,
+        "mean_excess_time_budget": [
+          0.000816666666666667,
+          0.001483333333333334
+        ],
+        "mean_union_time_fraction": [
+          0.014709266202111236,
+          0.01556373556940386
+        ],
+        "safety": [
+          1.0,
+          1.0
+        ],
+        "unsafe_issued_rate": [
+          0.0,
+          0.0
+        ]
+      },
+      "paired": {
+        "cluster_count": 100,
+        "mean_paired_time_reduction": [
+          0.2980323118363574,
+          0.30922562960804123
+        ]
+      },
+      "selected_route": "risk_per_second"
+    }
+  }
+}

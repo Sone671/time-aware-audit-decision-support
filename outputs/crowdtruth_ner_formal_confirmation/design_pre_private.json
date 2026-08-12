@@ -1,0 +1,64 @@
+{
+  "alpha_per_target": 0.016666666666666666,
+  "archive": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\crowdtruth_named_entities\\Crowdsourcing-NamedEntities-b40b46bd.zip",
+  "archive_sha256": "7b29e656c4a5a114218b3a07f2c5dba2d840a4be80b61188546d40aa3f8c42eb",
+  "base_seed": 20260812,
+  "gates": {
+    "availability_min": 0.3,
+    "episode_safety_min": 0.9,
+    "mean_excess_time_budget_max": 0.05,
+    "paired_count_min": 1,
+    "paired_time_reduction_min": 0.25,
+    "unsafe_issued_rate_max": 0.1
+  },
+  "license_handling": "analyze public source in place; do not redistribute source data",
+  "method_sha256_manifest": {
+    "G:\\eswa\\cost_aware_certification_2026-08-11\\src\\mfsc.py": "fd267819fa5e15293f98efac370e4b9f391cc7f10a20e049e6748bae97ae7e32",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_CROWDTRUTH_NER_FORMAL_PROTOCOL.md": "8f83df1253dfd088fc57bc694f453108ea37dea7e286b37bf802697f166bfc65",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FRESH_EFFICIENCY_SCREEN_PROTOCOL.md": "3622d1cfbce66c9347e5c9f3258e5ebbf1fb8297d767464ab4a9e37ba7c2a9da",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\crowdtruth_named_entity_public_screen\\public_screen.json": "ddcf343570a4cc7a1fa1d6a5ff7c7d933e3bd22353ee47f4f64940c43a9c00d9",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\crowdtruth_named_entity_public.py": "cfe6d01d2087f92cb9cd4f78b60928c0894ba5e5f2d1a466e9bffe5c22e808f3",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\crowdtruth_ner_formal_guard.py": "52c68c9ed6578b68cf4fda1290ab8f97528f2cc5bce5154fbd9d6f91bad8f9c3",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_crowdtruth_named_entity_public_screen.py": "32eb530914f19cbf0e98dd5c6ead02688b2ae18375671aace04f06fa014007a6",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_crowdtruth_ner_formal_confirmation.py": "d390f20ec38943b9b23b1b3a05e13c5abd3c8dd41d67bc9245da77fa4a10d0d7",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_time_aware_cifar100n.py": "19ad6416d3c34c6473b1c6772dbf02b9e5996f92434d736aeb0b09495735ee9d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "1e842867fff09fc2e2b219f2de3777d4128e9e7111af2a02cba2d7118f7108fe",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "methods": [
+    "score_time",
+    "risk_per_second"
+  ],
+  "population_size": 4545,
+  "private_truth_rule": "exact worker span set versus aggregate expert Gold-positive candidate set",
+  "protocol": "crowdtruth_oke_v2_external_efficiency_confirmation_v1",
+  "protocol_file": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_CROWDTRUTH_NER_FORMAL_PROTOCOL.md",
+  "protocol_sha256": "8f83df1253dfd088fc57bc694f453108ea37dea7e286b37bf802697f166bfc65",
+  "public_cost_cv": 1.954893114834211,
+  "public_cost_sha256": "36418c2c8fe0d2b498f15533e1e396408358b4f8b434683c4eddca3f1b3869c5",
+  "public_minimum_opportunity": 0.7451321803479047,
+  "public_score_sha256": "cd02bc656f74793881fe69deca755d0c33ae2db2facb2463d5f973acb671b0f9",
+  "public_score_time_ranking_sha256": "07c41287847b5373c554df249ddcf6b59cb6aae056ef9c4cae5c06a018168bf8",
+  "record_sequence_sha256": "4673166ce37da867fe54968bdfa201756ad21983fecbf7745a975ee630aef2b5",
+  "selected_route": "risk_per_second",
+  "sentinel_count": 750,
+  "sentinel_fraction": 0.16501650165016502,
+  "sentinel_repetitions": 100,
+  "targets": [
+    0.35,
+    0.45,
+    0.55
+  ],
+  "time_budgets": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "truth_loaded": false,
+  "unit_count": 303
+}

@@ -1,0 +1,24 @@
+{
+  "design_pre_private_sha256": "c99a1d13fd7174f694f3aee3a9497eae4694e8ff1446653d457761621b082c89",
+  "method_sha256_manifest": {
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\INFECTION_INSPECTION_PUBLIC_CORRECTION.md": "9ecfa764b84346f43bd8841d682ccdaaf371d016ca028c9dcd66de8cbf917859",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\SIMULTANEOUS_V3_INFECTION_INSPECTION_FORMAL_PROTOCOL.md": "769d0d9253312787de91d4e17b93e3ca52923edd21ab6958af2ffeb6ee562ee1",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\SIMULTANEOUS_V3_INFECTION_INSPECTION_PUBLIC_PROTOCOL.md": "a19a4487177c4b63f8cb12cff751999c9fc11c3c6f7e0449c39be5e71786e82c",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\infection_inspection\\1_Metadata_only.zip": "8a26209202b401d291e896b82bd566b8fa73a3d2aa50134818e7f535df99d64d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\infection_inspection\\public_fields.csv": "2e25052ce701ee2d2bd79dd2d4a43d3e1f4e972d0549bde16b1838dec6186d40",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\infection_inspection\\redact_infection_inspection_truth.exe": "c9c38e6e4ee8c7f7ef4682af5ec18f8c492ff527661fe2faabf55a99bfad78aa",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\infection_inspection_public_screen\\public_screen_corrected_pretruth.json": "f10701d8959f90111c8006a23603fee99c881e0594865d18dd1715e2a651a67b",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\redact_infection_inspection.cpp": "e10b5acdad79de2efe8a806c66c88f6096d1182afdc971d4fa856dbcf9ad41da",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\redact_infection_inspection_truth.cpp": "bab156b92c0f5b34c6d963053e0106cb21e42640840c86d69df4c0f2d0a9fc1d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_infection_inspection_formal_confirmation.py": "2dea01c0f5aeee6666b266e36eaca4413b287c7b4298f415291a6e9ca22357ea",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_infection_inspection_public_screen.py": "f1599e23cc1a86e65be6445a761b248f3d81d4fb111a28a53eb83799f332cd53",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "433568fe6c49c8fac67ddd3fe15638f17d9fb1fed0cbf49c3da49ded8a758e0b",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\simultaneous_v3.py": "810a06281c6dc85a23558d452413ab7f21ab427049783dc8fd5623d856424056",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "f9f3201409659af10f28def07938d59da1c4fdf069e7bae25364511160cb114c",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "status": "LOCKED_PRE_PRIVATE",
+  "truth_loaded": false,
+  "unlock_token_sha256": "932ffd9b4093b1828a6f521ce7f1125a25422bb92a60732b91cec6aae5044c1c"
+}

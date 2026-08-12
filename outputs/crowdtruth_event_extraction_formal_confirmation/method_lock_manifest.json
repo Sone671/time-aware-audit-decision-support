@@ -1,0 +1,19 @@
+{
+  "design_pre_private_sha256": "94741779bc4dab26bbacf0fcdd0c29fb6140db25ce5a09de1216133acda926e6",
+  "method_sha256_manifest": {
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_CROWDTRUTH_EVENT_EXTRACTION_FORMAL_PROTOCOL.md": "60d6c3fc99696936b6769378d460aebe3c8197a7dc479b99b3fc8d66480b3bf6",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_CROWDTRUTH_EVENT_EXTRACTION_PUBLIC_PROTOCOL.md": "c80839afee25ebede3d84f1b68bb9bd79864cd1faeccef4f3a69e77eb6194348",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FRESH_EFFICIENCY_SCREEN_PROTOCOL.md": "3622d1cfbce66c9347e5c9f3258e5ebbf1fb8297d767464ab4a9e37ba7c2a9da",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\crowdtruth_event_extraction_public_screen\\public_screen.json": "9311558419dcea9113eaa40a5699fd32391071a16ad86383a7589f074014a692",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\crowdtruth_event_extraction_public.py": "7faabfe38fbde77e0ffae4b3493a2b5a66182e8ba1b2b82a748070e3fb638fa5",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\prepare_crowdtruth_event_extraction_formal.py": "6802e987850e3fd4db0aa8eb1c0f170a7c6d65a8d24cd9046425eff33458fe77",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_crowdtruth_event_extraction_public_screen.py": "ae080da4af20951686f3372d535054132986ef76fb5d06a31d73308ae26b05f7",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_time_aware_cifar100n.py": "19ad6416d3c34c6473b1c6772dbf02b9e5996f92434d736aeb0b09495735ee9d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "2be15a31f1bd37728749e5e3b61de10b9356142d46251bfab0543b5b7692ccd5",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef"
+  },
+  "status": "INVALIDATED_PRE_CONFIRMATION_PRIVATE_PEEK",
+  "truth_loaded": true,
+  "formal_population_truth_loaded": false,
+  "invalidation_reason": "One row of TE3-Gold_events.csv, including Is Event, was decoded before this executable lock was complete. The candidate is ineligible for formal confirmation."
+}

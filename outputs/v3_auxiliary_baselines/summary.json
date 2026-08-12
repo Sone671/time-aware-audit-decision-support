@@ -1,0 +1,62 @@
+{
+  "dataset": "CIFAR-100N",
+  "interpretation": "Auxiliary baselines are public-only exploratory comparisons; the registered efficiency estimand remains risk_per_second against score_time.",
+  "methods": {
+    "cost_ascending": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.05769444444444445,
+      "mean_union_item_fraction": 0.28130028888888886,
+      "mean_union_time_fraction": 0.12104192919701,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "random_order": {
+      "availability": 0.49444444444444446,
+      "issued_safety": 0.99,
+      "mean_excess_time_budget": 0.08005656108597287,
+      "mean_union_item_fraction": 0.15638269662921347,
+      "mean_union_time_fraction": 0.15683481860850032,
+      "passed": false,
+      "unsafe_issued_rate": 0.006741573033707865
+    },
+    "risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 0.9866666666666667,
+      "mean_excess_time_budget": 0.024675977653631286,
+      "mean_union_item_fraction": 0.1695109111111111,
+      "mean_union_time_fraction": 0.07836878800372922,
+      "passed": true,
+      "unsafe_issued_rate": 0.005555555555555556
+    },
+    "score_time": {
+      "availability": 0.9955555555555555,
+      "issued_safety": 0.9866666666666667,
+      "mean_excess_time_budget": 0.03451739618406285,
+      "mean_union_item_fraction": 0.14746234375,
+      "mean_union_time_fraction": 0.1464776114752205,
+      "passed": true,
+      "unsafe_issued_rate": 0.005580357142857143
+    }
+  },
+  "paired_to_score_time": [
+    {
+      "common_safe_cells": 887,
+      "comparison": "risk_per_second",
+      "mean_paired_time_reduction": 0.4599842387547107
+    },
+    {
+      "common_safe_cells": 891,
+      "comparison": "cost_ascending",
+      "mean_paired_time_reduction": 0.1855250600058885
+    },
+    {
+      "common_safe_cells": 439,
+      "comparison": "random_order",
+      "mean_paired_time_reduction": -0.8029354445036059
+    }
+  ],
+  "protocol": "v3_rank_invariant_auxiliary_baselines_v1",
+  "replicates": 100,
+  "sentinel_count": 750
+}

@@ -1,0 +1,57 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Local machine and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Downloaded or private data: keep outside Git and restore via README paths
+external_candidates/
+formal_confirmation_candidates/
+formal_efficiency_candidates/
+data/
+private_truth.csv
+**/private_truth.csv
+**/private/
+**/private_truth_closed/
+*.zip
+*.gz
+*.tar
+*.npy
+*.npz
+*.pt
+*.pth
+*.pkl
+*.xlsx
+*.mat
+*.exe
+
+# Replay outputs: retain compact summaries, locks, and ablation tables only.
+outputs/*
+outputs/**/*
+!outputs/
+!outputs/**/
+!outputs/**/summary.json
+!outputs/**/design.json
+!outputs/**/design_pre_private.json
+!outputs/**/method_lock_manifest.json
+!outputs/**/result_artifact_manifest.json
+!outputs/**/bootstrap_intervals.json
+!outputs/**/gate_ablation.csv
+!outputs/**/gate_structure_ablation.csv
+!outputs/**/sentinel_grid_summary.csv
+!outputs/gated_portfolio/DEVELOPMENT_REPORT.md
+!outputs/infection_inspection_public_screen/public_screen_corrected_pretruth.json
+
+# Manuscript stays local until a separate release decision.
+paper_kbs_v2/
+
+# Scratch and rendered QA material
+tmp/

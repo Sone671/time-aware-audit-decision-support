@@ -1,0 +1,36 @@
+{
+  "confirmation": {
+    "dataset": "CrowdTruth-StoryLines-pilot",
+    "passed": false,
+    "private_noise_rate": 0.20446851726472579,
+    "public_cost_cv": 1.0071100931654413,
+    "selected_method": "risk_per_second"
+  },
+  "decision": {
+    "cost_gate_at_least_0_25": false,
+    "development_go": false,
+    "mean_paired_time_reduction": 0.019199225799253383,
+    "methods_passed": 2,
+    "paired_count": 300
+  },
+  "methods": {
+    "risk_per_second": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.015183333333333335,
+      "mean_union_item_fraction": 0.36111035883547726,
+      "mean_union_time_fraction": 0.34846062779194803,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    },
+    "score_time": {
+      "availability": 1.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.027333333333333338,
+      "mean_union_item_fraction": 0.3546490634168359,
+      "mean_union_time_fraction": 0.3561793265391623,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    }
+  }
+}

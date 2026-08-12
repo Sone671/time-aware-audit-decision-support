@@ -1,0 +1,46 @@
+{
+  "bin_sizes": [
+    2853,
+    3093
+  ],
+  "cost_cv": 0.5917902050014224,
+  "cost_mean_seconds": 98.24290038921804,
+  "cost_median_seconds": 82.5714285714,
+  "cost_rule": "published CrowdTruth aggregate duration per query-document pair",
+  "cost_sha256": "315166110240fabc4a85c2b6eb822b7759f267e1744405d9d7597a44988ba992",
+  "cost_total_seconds": 584152.2857142905,
+  "cv_gate": 0.5,
+  "deployed_label_rule": "max_relevance_score >= 0.40",
+  "pair_overlap": 0,
+  "population_size": 5946,
+  "protocol": "nyt_topical_relevance_external_confirmation_v1",
+  "protocol_file": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\TOPICAL_RELEVANCE_CONFIRMATION_PROTOCOL.md",
+  "protocol_sha256": "73c15bbd559670f125e7e23ff3f36314fb9a13c911a096a2ed365c10eaabba3b",
+  "published_decision_threshold": 0.4,
+  "ranking_sha256": "a68c2ecb3217d111c0aa723978b6fd72d2f47519178286d84b28c264692e2d58",
+  "released_crowd_rel_binary_mismatch_count": 560,
+  "released_crowd_rel_binary_role": "inconsistent release metadata; unused",
+  "risk_rule": "piecewise normalized margin uncertainty around t=0.40",
+  "score_sha256": "63acea32278c63f4b0da30dfbe4f6630433e24c9b66405b0771f790995d03932",
+  "selected_method_pre_private": "risk_per_second",
+  "sentinel_count": 500,
+  "sentinel_fraction": 0.08409014463504877,
+  "sentinel_replicates": 100,
+  "source_doi": "10.5281/zenodo.1478495",
+  "source_files": [
+    {
+      "path": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\external_candidates\\crowdtruth_topical_relevance\\extracted\\NYT-Crowdsourcing-Topical-Relevance\\Results\\Main_Bin1\\units_Main_Bin1_2P-RndPar-High_nist_only.csv",
+      "sha256": "3476aa3b25c6a101e737c28322a7ca3156310d3b2bb7e04edb573b0a30f8eb79"
+    },
+    {
+      "path": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\external_candidates\\crowdtruth_topical_relevance\\extracted\\NYT-Crowdsourcing-Topical-Relevance\\Results\\Main_Bin2\\units_Main_Bin2_2P-RndPar-High_nist_only.csv",
+      "sha256": "811701169616517ec772fb51d06143cc61aef9df7bb56e838cd6af4a3be59c12"
+    }
+  ],
+  "targets": [
+    0.15,
+    0.2,
+    0.25
+  ],
+  "truth_loaded": false
+}

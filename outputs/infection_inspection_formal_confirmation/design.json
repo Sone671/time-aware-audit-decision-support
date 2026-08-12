@@ -1,0 +1,104 @@
+{
+  "base_seed": 20260820,
+  "certificate_alpha": 0.0071428571428571435,
+  "familywise_beta": 0.05,
+  "gates": {
+    "availability_min": 0.3,
+    "issued_safety_min": 0.9,
+    "mean_excess_time_budget_max": 0.05,
+    "paired_count_min": 1,
+    "paired_time_reduction_min": 0.25,
+    "unsafe_issued_rate_max": 0.1
+  },
+  "method_sha256_manifest": {
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\INFECTION_INSPECTION_PUBLIC_CORRECTION.md": "9ecfa764b84346f43bd8841d682ccdaaf371d016ca028c9dcd66de8cbf917859",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\SIMULTANEOUS_V3_INFECTION_INSPECTION_FORMAL_PROTOCOL.md": "769d0d9253312787de91d4e17b93e3ca52923edd21ab6958af2ffeb6ee562ee1",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\SIMULTANEOUS_V3_INFECTION_INSPECTION_PUBLIC_PROTOCOL.md": "a19a4487177c4b63f8cb12cff751999c9fc11c3c6f7e0449c39be5e71786e82c",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\infection_inspection\\1_Metadata_only.zip": "8a26209202b401d291e896b82bd566b8fa73a3d2aa50134818e7f535df99d64d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\infection_inspection\\public_fields.csv": "2e25052ce701ee2d2bd79dd2d4a43d3e1f4e972d0549bde16b1838dec6186d40",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\infection_inspection\\redact_infection_inspection_truth.exe": "c9c38e6e4ee8c7f7ef4682af5ec18f8c492ff527661fe2faabf55a99bfad78aa",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\infection_inspection_public_screen\\public_screen_corrected_pretruth.json": "f10701d8959f90111c8006a23603fee99c881e0594865d18dd1715e2a651a67b",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\redact_infection_inspection.cpp": "e10b5acdad79de2efe8a806c66c88f6096d1182afdc971d4fa856dbcf9ad41da",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\redact_infection_inspection_truth.cpp": "bab156b92c0f5b34c6d963053e0106cb21e42640840c86d69df4c0f2d0a9fc1d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_infection_inspection_formal_confirmation.py": "2dea01c0f5aeee6666b266e36eaca4413b287c7b4298f415291a6e9ca22357ea",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_infection_inspection_public_screen.py": "f1599e23cc1a86e65be6445a761b248f3d81d4fb111a28a53eb83799f332cd53",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "433568fe6c49c8fac67ddd3fe15638f17d9fb1fed0cbf49c3da49ded8a758e0b",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\simultaneous_v3.py": "810a06281c6dc85a23558d452413ab7f21ab427049783dc8fd5623d856424056",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "f9f3201409659af10f28def07938d59da1c4fdf069e7bae25364511160cb114c",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "methods": [
+    "score_time",
+    "risk_per_second"
+  ],
+  "population_digests": {
+    "cost_sha256": "fa9a3eed2a697260beb209bfa6b88550dad4acc7a8c07a3d6fe309be60afa9dc",
+    "record_sequence_sha256": "be7fd3b537953960c21ec2e89efcf3520a5b23025729ea8732add687f68a5d52",
+    "score_sha256": "d31680e36a2dee075af3a3b18c53a41f9a458ee6d4c07992dd64151636a83f0a",
+    "score_time_ranking_sha256": "da4067a6e929684cd3646468c1afc015d591e86cb6d3f405cdf9bba1d23fba46",
+    "subject_sequence_sha256": "5c3571200996cb367a4c5d8e4198414fb7633dacba67a3af29d0df80eaf701fd"
+  },
+  "population_size": 841126,
+  "private_loss_rule": "binary volunteer classification unequal to unique exact-subject expected_response",
+  "private_truth_absent": false,
+  "private_truth_fields": [
+    "classification_id",
+    "subject_ids",
+    "expected_response"
+  ],
+  "protocol": "infection_inspection_simultaneous_v3_fresh_confirmation_v1",
+  "protocol_file": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\SIMULTANEOUS_V3_INFECTION_INSPECTION_FORMAL_PROTOCOL.md",
+  "protocol_sha256": "769d0d9253312787de91d4e17b93e3ca52923edd21ab6958af2ffeb6ee562ee1",
+  "public_cost_cv": 70.33654874021825,
+  "public_minimum_opportunity": 0.9241782954333709,
+  "selected_route": "risk_per_second",
+  "sentinel_count": 1000,
+  "sentinel_repetitions": 100,
+  "source_license": "CC-BY-NC-4.0",
+  "subject_count": 49697,
+  "synthetic_method_dry_run": {
+    "comparison_rows": 6,
+    "issued_count": 12,
+    "methods": {
+      "risk_per_second": {
+        "availability": 1.0,
+        "issued_safety": 1.0,
+        "mean_excess_time_budget": 0.03333333333333333,
+        "mean_union_item_fraction": 0.20291666666666663,
+        "mean_union_time_fraction": 0.15247883519451855,
+        "passed": true,
+        "unsafe_issued_rate": 0.0
+      },
+      "score_time": {
+        "availability": 1.0,
+        "issued_safety": 1.0,
+        "mean_excess_time_budget": 0.03333333333333333,
+        "mean_union_item_fraction": 0.15341666666666667,
+        "mean_union_time_fraction": 0.1510277695424449,
+        "passed": true,
+        "unsafe_issued_rate": 0.0
+      }
+    },
+    "paired_count": 6,
+    "row_count": 12,
+    "sha256": "efc740e6dab80111fd8da18deb919732b1869942abca5646cd4ad3d466b94b15",
+    "status": "PASS"
+  },
+  "targets": [
+    0.25,
+    0.35,
+    0.45
+  ],
+  "targets_share_upper_curve": true,
+  "time_budgets": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "truth_loaded": true
+}

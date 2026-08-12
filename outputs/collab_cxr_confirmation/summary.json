@@ -1,0 +1,38 @@
+{
+  "confirmation": {
+    "dataset": "Collab-CXR-pathology-records",
+    "passed": false,
+    "population_size": 2380144,
+    "private_error_count": 77854,
+    "private_error_rate": 0.03270978562641588,
+    "public_cost_cv": 1.0016296597481384,
+    "selected_method": "risk_per_second"
+  },
+  "decision": {
+    "cost_gate_at_least_0_25": false,
+    "development_go": false,
+    "mean_paired_time_reduction": 0.16572072199043714,
+    "methods_passed": 1,
+    "paired_count": 209
+  },
+  "methods": {
+    "risk_per_second": {
+      "availability": 0.6966666666666667,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.04698564593301435,
+      "mean_union_item_fraction": 0.05523414553728421,
+      "mean_union_time_fraction": 0.06220544368923076,
+      "passed": true,
+      "unsafe_issued_rate": 0.0
+    },
+    "score_time": {
+      "availability": 0.6966666666666667,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.05447368421052632,
+      "mean_union_item_fraction": 0.052867837822268705,
+      "mean_union_time_fraction": 0.07528859373690538,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    }
+  }
+}

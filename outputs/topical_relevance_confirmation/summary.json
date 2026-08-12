@@ -1,0 +1,38 @@
+{
+  "confirmation": {
+    "dataset": "CrowdTruth-NYT-Topical-Relevance-Main",
+    "passed": false,
+    "population_size": 5946,
+    "private_error_count": 2316,
+    "private_error_rate": 0.3895055499495459,
+    "public_cost_cv": 0.5917902050014224,
+    "selected_method": "risk_per_second"
+  },
+  "decision": {
+    "cost_gate_at_least_0_25": false,
+    "development_go": false,
+    "mean_paired_time_reduction": NaN,
+    "methods_passed": 0,
+    "paired_count": 0
+  },
+  "methods": {
+    "risk_per_second": {
+      "availability": 0.03333333333333333,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 0.0,
+      "mean_union_item_fraction": 0.3598721829801547,
+      "mean_union_time_fraction": 0.2659332962588524,
+      "passed": false,
+      "unsafe_issued_rate": 0.0
+    },
+    "score_time": {
+      "availability": 0.0,
+      "issued_safety": 1.0,
+      "mean_excess_time_budget": 1.0,
+      "mean_union_item_fraction": NaN,
+      "mean_union_time_fraction": NaN,
+      "passed": false,
+      "unsafe_issued_rate": 1.0
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cost_cv": 6.004087044635427,
+  "cost_mean_seconds": 1.9358507919282444,
+  "cost_median_seconds": 1.483,
+  "cost_rule": "positive raw reaction_time milliseconds divided by 1000",
+  "cost_sha256": "cff999e40a832dddefab5eb5e193733d5964b6434d5ef2abd4a3b864fe3a3fbe",
+  "cost_total_seconds": 995391.2470000001,
+  "cv_gate": 0.5,
+  "excluded_nonpositive_normal_trials": 12,
+  "population_size": 514188,
+  "probability_source": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\external_candidates\\cifar10h\\cifar10h-probs.npy",
+  "probability_source_sha256": "436ae98620e00073f9d08585ac870573b588853e7af9f54eb1647408114af77d",
+  "protocol": "cifar10h_record_level_external_confirmation_v1",
+  "protocol_file": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\CIFAR10H_RECORD_CONFIRMATION_PROTOCOL.md",
+  "protocol_sha256": "248df1fa395c171488854b4ba23cca03e97ca6365039addd907237bbbef9d014",
+  "ranking_sha256": "39d33add0b168d0825cc5b0ca5857dfa15b68bccec861a8f2456d09a2879de26",
+  "raw_csv": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\external_candidates\\cifar10h\\extracted\\cifar10h-raw.csv",
+  "raw_csv_sha256": "c6d967d475f56151f3587521ec91a4b4837ab0e57638c554e8bee3c98d5b11e3",
+  "risk_rule": "1 - image-level human probability assigned to the chosen label",
+  "score_sha256": "ff4e81cbc8fd5d9ef9c3d6858b954a8f521cf35c307ba50dfda5820289e613ce",
+  "selected_method_pre_private": "risk_per_second",
+  "sentinel_count": 500,
+  "sentinel_fraction": 0.0009724069795483364,
+  "sentinel_replicates": 5,
+  "source_repository": "https://github.com/jcpeterson/cifar-10h",
+  "targets": [
+    0.05,
+    0.075,
+    0.1
+  ],
+  "truth_loaded": false,
+  "unique_images": 10000
+}

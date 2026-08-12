@@ -1,0 +1,75 @@
+{
+  "alpha_per_target": 0.016666666666666666,
+  "archive": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_efficiency_candidates\\whichdog\\whichdog.zip",
+  "archive_sha256": "f74dde0f15867c2532ac028a98b0c27c41d18dc6063fc4fb51b397d57cbae150",
+  "base_seed": 20260815,
+  "cell_count": 800,
+  "cost_rule": "positive finite released time milliseconds divided by 1000; no trimming",
+  "gates": {
+    "availability_min": 0.3,
+    "episode_safety_min": 0.9,
+    "mean_excess_time_budget_max": 0.05,
+    "paired_count_min": 1,
+    "paired_time_reduction_min": 0.25,
+    "unsafe_issued_rate_max": 0.1
+  },
+  "image_count": 400,
+  "license": "CC-BY-4.0",
+  "method_sha256_manifest": {
+    "G:\\eswa\\cost_aware_certification_2026-08-11\\src\\mfsc.py": "fd267819fa5e15293f98efac370e4b9f391cc7f10a20e049e6748bae97ae7e32",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_WHICHDOG_FORMAL_PROTOCOL.md": "a429bbf426bc5a468114145766673c8ecc4df241de3e11611fd4a9afe48caa58",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_WHICHDOG_PUBLIC_PROTOCOL.md": "df569b8cfbfe7da16a7c577b47f04e4cce19d8666900d999e8a6b50995af1496",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\WHICHDOG_PUBLIC_RESULT.md": "639747780add4a8e2b8479fb4a4921c34c331be76755ff36ba2b56bb4efa0777",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\whichdog_public_screen\\public_screen.json": "7c725842a6976f939ab598690349dac02db8308c3183d75dc57bd88e08ed8cfd",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_time_aware_cifar100n.py": "19ad6416d3c34c6473b1c6772dbf02b9e5996f92434d736aeb0b09495735ee9d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "433568fe6c49c8fac67ddd3fe15638f17d9fb1fed0cbf49c3da49ded8a758e0b",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_whichdog_formal_confirmation.py": "13d5061529aa68d4da6fbdb3add4236e221c4edce9df4a1038ecd6aaa074c62e",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_whichdog_public_screen.py": "7d8349f1e4cff294df949c76218ffac1795914c819ed0f310eb07870c37a61fa",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "f9f3201409659af10f28def07938d59da1c4fdf069e7bae25364511160cb114c",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\whichdog_formal_guard.py": "e5672806a4b36fcc0867637e72cdf42cdd8dc949d7724065af50c9311b1302eb",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\whichdog_public.py": "63cc9cc27954d792eb80bbdb07b02cfe1feb7524a82719dce7c53fc1b93dd5dd",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "methods": [
+    "score_time",
+    "risk_per_second"
+  ],
+  "population_size": 61152,
+  "private_loss_rule": "full: answer != singleton class; candidate: class absent from answer set",
+  "protocol": "whichdog_v2_external_efficiency_confirmation_v1",
+  "protocol_file": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_WHICHDOG_FORMAL_PROTOCOL.md",
+  "protocol_sha256": "a429bbf426bc5a468114145766673c8ecc4df241de3e11611fd4a9afe48caa58",
+  "public_cost_cv": 2.7346103741813597,
+  "public_cost_sha256": "9d90fe72c28845d1567bff06f85bcc0897709a1b8e1c0d01e464e39cf7d91273",
+  "public_minimum_opportunity": 0.8417539603011748,
+  "public_score_sha256": "c544dad5e9b48df9c38588731639d6dee80785918a56845c800319563ab1bef7",
+  "public_score_time_ranking_sha256": "3a63beba6ce2aed58f1626a2166ec3b7393c4c1f8d1c7b2ef2224baa849c6b81",
+  "record_sequence_sha256": "80f7a4729f479144d7a2d6ce896a60d74cd82893b87ed8c664ee05628e9361c5",
+  "response_rule": "direct complete answer set inside exact displayed options",
+  "risk_rule": "leave-one-labeler-out exact answer-set disagreement in exact option cell",
+  "selected_route": "risk_per_second",
+  "sentinel_count": 750,
+  "sentinel_fraction": 0.012264521193092622,
+  "sentinel_repetitions": 100,
+  "synthetic_method_dry_run": {
+    "row_count": 12,
+    "sha256": "8417f83246872bdc5592e9407ceceb8c62da00bc62b6e94aef6deac94f53a24c",
+    "status": "PASS"
+  },
+  "targets": [
+    0.35,
+    0.45,
+    0.55
+  ],
+  "time_budgets": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "truth_loaded": false
+}

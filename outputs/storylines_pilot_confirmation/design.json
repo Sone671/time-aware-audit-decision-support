@@ -1,0 +1,20 @@
+{
+  "cost_cv": 1.0071100931654413,
+  "cv_gate": 0.5,
+  "population_size": 1477,
+  "private_role": "held-out expert confirmation only",
+  "protocol": "storylines_pilot_heldout_confirmation_v1",
+  "protocol_sha256": "8d70dbe59e5dc69d304a1cd537fc252c92160a990138ea63fa86f2d315a5a49b",
+  "selected_method_pre_private": "risk_per_second",
+  "sentinel_count": 500,
+  "sentinel_replicates": 100,
+  "source": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\external_candidates\\crowdtruth_storylines\\extracted\\CrowdTruth-Crowdsourcing-StoryLines-bc37859\\data\\results\\pilot_results_only_pairs.csv",
+  "source_doi": "10.5281/zenodo.1478508",
+  "source_sha256": "13aeb7ab6a473afa0ffa498bfec04dd124f1f04a1d113fd8da19307389512967",
+  "targets": [
+    0.15,
+    0.2,
+    0.25
+  ],
+  "truth_loaded": true
+}

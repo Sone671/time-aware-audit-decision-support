@@ -1,0 +1,83 @@
+{
+  "alpha_per_target": 0.016666666666666666,
+  "archive": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\formal_confirmation_candidates\\satbench\\human-data.zip",
+  "archive_sha256": "3d38cc39f426b415ce426a33e9767c76f87f269beea35fe6515adeb77e463d39",
+  "base_seed": 20260811,
+  "cost_rule": "positive finite raw duration / 1000 seconds; no trimming",
+  "decision_labels": {
+    "efficiency": "NOT TESTED (public abstention)",
+    "fail": "SATBench formal NO-GO",
+    "pass": "SATBench fallback-safety GO"
+  },
+  "efficiency_estimand_selected": false,
+  "eligible_members": [
+    "human-data/main/color-blur.txt",
+    "human-data/main/color-gray.txt",
+    "human-data/main/gray-noise.txt"
+  ],
+  "filename_rule": "SHA256 opaque identifier; original not retained or parsed",
+  "forbidden_dataset_labels": [
+    "StoryLines pilot",
+    "StoryLines-main",
+    "NYT Topical Relevance",
+    "ImageNet-16H",
+    "CIFAR-10H record-level",
+    "CIFAR-10N",
+    "CIFAR-100N",
+    "Collab-CXR",
+    "Dopanim"
+  ],
+  "gates": {
+    "availability_min": 0.3,
+    "episode_safety_min": 0.9,
+    "mean_excess_time_budget_max": 0.05,
+    "unsafe_issued_rate_max": 0.1
+  },
+  "method_sha256_manifest": {
+    "G:\\eswa\\cost_aware_certification_2026-08-11\\src\\mfsc.py": "fd267819fa5e15293f98efac370e4b9f391cc7f10a20e049e6748bae97ae7e32",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_CANDIDATE_PROTOCOL.md": "3dc2d21be13ad39f6ac2bafa080dc026df3443e873f757498cc7e8ec707e89f7",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FORMAL_CONFIRMATION_PROTOCOL.md": "cb8db235ce764645de00062f331aba8b61a0d2e59f9d64a5704199a1a42c8070",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\outputs\\satbench_public_audit\\public_audit.json": "03772eaebdbd46b4ac1635633d2c888e81e014c9aa4209276a0bf13ba164aee6",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\formal_data_guard.py": "f8ae2b181cc4e9571592d715565de330e40af3ac471b57ff0e06980c5586f757",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_satbench_formal_confirmation.py": "51b3ad1bc92725b5522596502398b646ef4e2dadb8aef1ac2b4dea9430f25ec5",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_satbench_public_audit.py": "e5bc16a0cf562ce5f68aa537e625faccadefc18f50b37ec72837fad7c3816cc8",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_time_aware_cifar100n.py": "19ad6416d3c34c6473b1c6772dbf02b9e5996f92434d736aeb0b09495735ee9d",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\run_v2_sentinel_screen.py": "2be15a31f1bd37728749e5e3b61de10b9356142d46251bfab0543b5b7692ccd5",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\satbench_public.py": "d925b81979b710980f42678b35fc90e08fa1063ef514b01f3df20b32c6653acd",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\time_cost.py": "1e842867fff09fc2e2b219f2de3777d4128e9e7111af2a02cba2d7118f7108fe",
+    "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\src\\v2_policy.py": "a582e37bb31eb71e43c1481bb03962a0e28dce25f2446c7875fae9d50c10d3ef",
+    "G:\\latent_group_verification_mvp\\src\\robust_verify\\audit_budget.py": "fd3be395379c90a53dda09707351d30450b353aad03044eafb9f63c08df578a0"
+  },
+  "observer_count": 148,
+  "population_size": 97118,
+  "protocol": "satbench_v2_formal_confirmation_v1",
+  "protocol_file": "G:\\eswa\\time_aware_audit_decision_support_2026-08-11\\V2_FORMAL_CONFIRMATION_PROTOCOL.md",
+  "protocol_sha256": "cb8db235ce764645de00062f331aba8b61a0d2e59f9d64a5704199a1a42c8070",
+  "public_cost_cv": 0.3134912739171875,
+  "public_cost_sha256": "b1f82ad83338487800d49fd18e52be36ff6ab7e573681cf8b0227407849560fa",
+  "public_minimum_opportunity": 0.27651410737657167,
+  "public_record_sequence_sha256": "5f4dba73e448581b743fd2c2dc9cd767e2f997ea08964ebf1457048e6a319080",
+  "public_score_sha256": "c0340fef6862edb00b5c601c004a8d00f55d39ce02ef5ebbe70df436d570c375",
+  "public_score_time_ranking_sha256": "d0290a0b401c0e8f5d0f30095d0eb232d1655e1f89c65f6d12672fd2ac70facd",
+  "risk_rule": "1 - (same-response count within experiment/stimulus/deadline - 1) / (valid cell size - 1)",
+  "selected_route": "score_time",
+  "sentinel_count": 750,
+  "sentinel_fraction": 0.007722564303218765,
+  "sentinel_repetitions": 100,
+  "targets": [
+    0.35,
+    0.45,
+    0.55
+  ],
+  "time_budgets": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "truth_loaded": false,
+  "unselected_route_truth_evaluation_authorized": false
+}

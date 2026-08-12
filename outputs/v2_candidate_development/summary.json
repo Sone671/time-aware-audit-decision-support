@@ -1,0 +1,98 @@
+{
+  "datasets": {
+    "CIFAR-100N": {
+      "efficiency_selected": true,
+      "paired_count_if_rps": 885,
+      "paired_time_reduction_if_rps": 0.4512789916647031,
+      "population_size": 50000,
+      "public_cost_cv": 0.687836849383914,
+      "public_mean_opportunity": 0.6467737921453702,
+      "public_minimum_opportunity": 0.4768011443713097,
+      "route_metrics": {
+        "availability": 1.0,
+        "issued_safety": 0.9766666666666667,
+        "mean_excess_time_budget": 0.026008968609865474,
+        "mean_union_item_fraction": 0.17718726666666668,
+        "mean_union_time_fraction": 0.08061551970500005,
+        "passed": true,
+        "unsafe_issued_rate": 0.008888888888888889
+      },
+      "route_pass": true,
+      "selected_route": "risk_per_second",
+      "sentinel_count": 750,
+      "sentinel_fraction": 0.015,
+      "targets": [
+        0.3,
+        0.35,
+        0.4
+      ]
+    },
+    "CIFAR-10N": {
+      "efficiency_selected": false,
+      "paired_count_if_rps": 895,
+      "paired_time_reduction_if_rps": 0.1548063777361541,
+      "population_size": 50000,
+      "public_cost_cv": 0.31739822832184345,
+      "public_mean_opportunity": 0.35170315099405386,
+      "public_minimum_opportunity": 0.1879388339090886,
+      "route_metrics": {
+        "availability": 0.9988888888888889,
+        "issued_safety": 0.9933333333333333,
+        "mean_excess_time_budget": 0.031938547486033524,
+        "mean_union_item_fraction": 0.1415832703003337,
+        "mean_union_time_fraction": 0.14136768003776531,
+        "passed": true,
+        "unsafe_issued_rate": 0.004449388209121246
+      },
+      "route_pass": true,
+      "selected_route": "score_time",
+      "sentinel_count": 750,
+      "sentinel_fraction": 0.015,
+      "targets": [
+        0.3,
+        0.35,
+        0.4
+      ]
+    },
+    "StoryLines-main": {
+      "efficiency_selected": false,
+      "paired_count_if_rps": 213,
+      "paired_time_reduction_if_rps": 0.06150830925134633,
+      "population_size": 7778,
+      "public_cost_cv": 0.7735969732821671,
+      "public_mean_opportunity": 0.49960239377512144,
+      "public_minimum_opportunity": 0.36232149841795314,
+      "route_metrics": {
+        "availability": 0.7133333333333334,
+        "issued_safety": 1.0,
+        "mean_excess_time_budget": 0.033621495327102804,
+        "mean_union_item_fraction": 0.25125023130180263,
+        "mean_union_time_fraction": 0.2488366567553523,
+        "passed": true,
+        "unsafe_issued_rate": 0.0
+      },
+      "route_pass": true,
+      "selected_route": "score_time",
+      "sentinel_count": 1500,
+      "sentinel_fraction": 0.19285163281049114,
+      "targets": [
+        0.15,
+        0.2,
+        0.25
+      ]
+    }
+  },
+  "decision": {
+    "all_routes_pass": true,
+    "development_go": true,
+    "efficiency_paired_count": 885,
+    "efficiency_selected_datasets": [
+      "CIFAR-100N"
+    ],
+    "pooled_efficiency_time_reduction": 0.4512789916647029
+  },
+  "locked_external_datasets_used": false,
+  "protocol": "v2_public_opportunity_cost_power_candidate_v1",
+  "protocol_sha256": "3dc2d21be13ad39f6ac2bafa080dc026df3443e873f757498cc7e8ec707e89f7",
+  "replicates": 100
+}
