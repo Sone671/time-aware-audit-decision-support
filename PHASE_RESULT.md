@@ -2,8 +2,8 @@
 
 ## Outcome
 
-The new direction is viable as a KBS method-development package, but it is not
-yet confirmatory.
+The new direction is viable as a method-development package, but it is not yet
+confirmatory.
 
 The method keeps a frozen public error-risk score and changes only the decision
 layer: when public review-time heterogeneity is high (`CV >= 0.50`), review by
@@ -36,7 +36,7 @@ StoryLines common safe episodes gives a descriptive pooled reduction of
 CIFAR-100N and CIFAR-10N are old development data.  StoryLines was downloaded
 from Zenodo DOI `10.5281/zenodo.1478508` and contains genuine start/end times,
 but its aggregate truth was inspected during feasibility analysis.  Therefore
-none of the three is an untouched confirmation for the final KBS claim.
+none of the three is an untouched confirmation for the final claim.
 
 The only authorized next empirical step is an independent public dataset with
 per-task or per-batch annotation time, frozen cost mapping, and untouched
@@ -67,7 +67,7 @@ The pilot's small population was a real limiting factor, but not the sole
 failure cause. Larger datasets reveal two further gaps: the CV-only gate does
 not predict whether public risk and cost are aligned strongly enough for 25%
 savings, and the fixed 500 sentinel can still make the exact certificate more
-than 5pp conservative. The frozen v1 method remains NO-GO for a confirmed KBS
+than 5pp conservative. The frozen v1 method remains NO-GO for a confirmed
 method paper. Full analysis and the locked-data boundary are in
 `EXTERNAL_SCALE_CONFIRMATION_REPORT.md`.
 

@@ -5,7 +5,7 @@ Date: 2026-08-11.
 ## Decision
 
 The frozen v1 heterogeneity-gated risk-per-second method is **NO-GO as a
-confirmed KBS method package**. Increasing the population resolves the extreme
+confirmed method package**. Increasing the population resolves the extreme
 sentinel cost floor seen in the StoryLines pilot, but population size alone is
 not sufficient. None of the four additional frozen external confirmations
 passes every prespecified gate on the same dataset.

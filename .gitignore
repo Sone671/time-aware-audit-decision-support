@@ -50,8 +50,8 @@ outputs/**/*
 !outputs/gated_portfolio/DEVELOPMENT_REPORT.md
 !outputs/infection_inspection_public_screen/public_screen_corrected_pretruth.json
 
-# Manuscript stays local until a separate release decision.
-paper_kbs_v2/
+# Manuscript files stay local until a separate release decision.
+paper_*/
 
 # Scratch and rendered QA material
 tmp/

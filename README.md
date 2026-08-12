@@ -1,6 +1,6 @@
 # Time-Aware Audit Decision Support
 
-Reproducibility package for the Knowledge-Based Systems manuscript
+Reproducibility package for the study
 ``Time-Aware Audit Decision Support for Budgeted Label Verification``.
 
 The repository contains the public decision layer, simultaneous-v3 certificate,

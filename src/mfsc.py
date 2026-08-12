@@ -1,7 +1,8 @@
 """Monotone fixed-sequence finite-population certification.
 
 This small dependency is vendored from the certification companion project so
-the KBS package can replay the development code without importing that project.
+the research package can replay the development code without importing that
+project.
 """
 
 from __future__ import annotations

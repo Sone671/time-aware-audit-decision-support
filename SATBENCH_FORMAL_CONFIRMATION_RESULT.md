@@ -29,7 +29,7 @@ The mean recommended union-time fraction was 8.30%, and the mean union-item
 fraction was 9.96%. The output contains only `score_time` recommendations;
 the unselected risk-per-second route was not evaluated against truth.
 
-## Interpretation for the KBS package
+## Interpretation for the research package
 
 The result confirms the safety-controlled fallback branch on a fresh,
 multi-experiment human classification benchmark. It does not establish an

@@ -1,8 +1,8 @@
 # Code package manifest
 
-This repository is the reproducibility package for the KBS time-aware audit
-decision-support manuscript.  It intentionally does not redistribute downloaded
-datasets, private truth, or source archives.
+This repository is the reproducibility package for time-aware audit decision
+support. It intentionally does not redistribute downloaded datasets, private
+truth, or source archives.
 
 ## Included
 
@@ -30,8 +30,8 @@ workload estimates.
   truth fields.
 - Per-record recommendation CSVs, rendered page PNGs, caches, bytecode, and
   local LaTeX logs.
-- The full `paper_kbs_v2/` manuscript directory, including source, references,
-  compiled PDF, and build artifacts.
+- Local manuscript directories, including source, references, compiled PDFs,
+  and build artifacts.
 
 ## External data configuration
 

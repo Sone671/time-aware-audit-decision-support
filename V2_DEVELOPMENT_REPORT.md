@@ -85,7 +85,7 @@ it does not claim that a larger sentinel improves risk-per-second everywhere.
 - No WGA, group audit, retraining, repair utility, or downstream test metric is
   introduced.
 
-V2 is now strong enough to justify a KBS method-paper continuation, but not yet
+V2 is now strong enough to justify a method-paper continuation, but not yet
 submission-ready. The central claim must remain conditional: the system makes
 an efficiency intervention only when public frontier geometry supports it,
 while exact certification governs every issued recommendation.
