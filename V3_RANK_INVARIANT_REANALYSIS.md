@@ -62,5 +62,5 @@ descriptive uncertainty intervals, not replacement for the exact certificate.
 
 These corrections do not create an untouched intervention-positive external
 confirmation. In addition, logged durations are oracle replay costs rather
-than prospective duration predictions. Any submission claim must retain both
+than prospective duration predictions. Any interpretation must retain both
 boundaries.

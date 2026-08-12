@@ -70,15 +70,16 @@ def _method_order(
     condition: dict[str, Any], costs: np.ndarray, method: str
 ) -> np.ndarray:
     cache = condition.setdefault("_simultaneous_v3_method_order_cache", {})
-    if method in cache:
-        return cache[method]
+    cache_key = (method, id(costs))
+    if cache_key in cache:
+        return cache[cache_key]
     if method == "score_time":
         order = np.asarray(condition["ranking"], dtype=np.int64)
     elif method == "risk_per_second":
         order = risk_per_second_order(condition["score"], costs)
     else:
         raise ValueError(f"unknown method: {method}")
-    cache[method] = order
+    cache[cache_key] = order
     return order
 
 
@@ -92,6 +93,7 @@ def _curve(
     sentinel_count: int,
     time_budgets: tuple[float, ...],
     familywise_beta: float,
+    realized_costs: np.ndarray | None = None,
 ) -> pd.DataFrame:
     n = int(condition["population_size"])
     if not 1 <= int(sentinel_count) <= n:
@@ -104,6 +106,17 @@ def _curve(
         raise ValueError("costs must be a finite population-length vector")
     if (seconds <= 0.0).any():
         raise ValueError("costs must be positive")
+    realized = (
+        seconds
+        if realized_costs is None
+        else np.asarray(realized_costs, dtype=np.float64)
+    )
+    if (
+        realized.shape != (n,)
+        or not np.isfinite(realized).all()
+        or (realized <= 0.0).any()
+    ):
+        raise ValueError("realized_costs must be a positive finite population-length vector")
 
     seed = (
         int(base_seed)
@@ -115,7 +128,7 @@ def _curve(
     )
     order = _method_order(condition, seconds, method)
     review_cache = condition.setdefault("_simultaneous_v3_review_cache", {})
-    cache_key = (method, time_budgets)
+    cache_key = (method, time_budgets, id(seconds))
     if cache_key not in review_cache:
         review_cache[cache_key] = nested_time_prefixes(
             order, seconds, np.asarray(time_budgets, dtype=np.float64)
@@ -133,7 +146,7 @@ def _curve(
     positions = np.empty(n, dtype=np.int64)
     positions[order] = np.arange(n, dtype=np.int64)
     total_errors = int(errors.sum())
-    total_seconds = float(seconds.sum())
+    total_seconds = float(realized.sum())
     local_alpha = certificate_alpha(familywise_beta, time_budgets)
 
     rows: list[dict[str, Any]] = []
@@ -154,14 +167,15 @@ def _curve(
         actual_remaining = int(
             total_errors - reviewed_errors[index] - sampled_errors
         )
+        realized_plan_seconds = float(realized[review].sum())
         union_seconds = float(
-            plan_seconds[index] + seconds[suffix_sentinel].sum()
+            realized_plan_seconds + realized[suffix_sentinel].sum()
         )
         rows.append(
             {
                 "time_budget_fraction": float(budget),
                 "review_item_count": int(len(review)),
-                "review_time_fraction": float(plan_seconds[index] / total_seconds),
+                "review_time_fraction": float(realized_plan_seconds / total_seconds),
                 "sentinel_suffix_count": sample_count,
                 "sentinel_suffix_errors": sampled_errors,
                 "finite_population_upper": float(upper_remaining / n),
@@ -184,6 +198,7 @@ def run_episode(
     sentinel_count: int,
     time_budgets: tuple[float, ...] = TIME_BUDGETS,
     familywise_beta: float = FAMILYWISE_BETA,
+    realized_costs: np.ndarray | None = None,
 ) -> dict[str, Any]:
     """Run one target decision using a simultaneously valid budget curve."""
 
@@ -196,6 +211,8 @@ def run_episode(
         int(sentinel_count),
         budgets,
         float(familywise_beta),
+        id(costs),
+        id(realized_costs),
     )
     if cache_key not in curve_cache:
         curve_cache[cache_key] = _curve(
@@ -207,6 +224,7 @@ def run_episode(
             sentinel_count=sentinel_count,
             time_budgets=budgets,
             familywise_beta=familywise_beta,
+            realized_costs=realized_costs,
         )
     curve = curve_cache[cache_key]
     sequence = fixed_sequence(

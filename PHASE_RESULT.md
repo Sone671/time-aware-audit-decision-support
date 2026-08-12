@@ -23,7 +23,7 @@ reduces real union time by 27.93%, exceeding the 25% gate.  Adding the 14
 StoryLines common safe episodes gives a descriptive pooled reduction of
 28.03%; StoryLines remains a near-miss because excess time exceeds 5pp.
 
-## Separation from the ICLR diagnostic manuscript
+## Method scope
 
 - no WGA, group audit, retraining, repair utility, or test performance;
 - no new detector claim: NoiseScore or crowd uncertainty is a frozen input;
@@ -67,8 +67,8 @@ The pilot's small population was a real limiting factor, but not the sole
 failure cause. Larger datasets reveal two further gaps: the CV-only gate does
 not predict whether public risk and cost are aligned strongly enough for 25%
 savings, and the fixed 500 sentinel can still make the exact certificate more
-than 5pp conservative. The frozen v1 method remains NO-GO for a confirmed
-method paper. Full analysis and the locked-data boundary are in
+than 5pp conservative. The frozen v1 method remains NO-GO for external
+confirmation. Full analysis and the locked-data boundary are in
 `EXTERNAL_SCALE_CONFIRMATION_REPORT.md`.
 
 ## V2 development

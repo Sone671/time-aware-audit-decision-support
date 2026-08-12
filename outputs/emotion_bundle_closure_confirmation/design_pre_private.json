@@ -1,0 +1,172 @@
+{
+  "action_unit": "one experiment-specific target stimulus bundle",
+  "analysis": "emotion_bundle_closure_independent_validation_v1",
+  "bundle_public": {
+    "bundle_count": 90,
+    "bundle_id_sha256": "2b4bd670559c26a99a2968125f8e5b7bc69918ca4006e7ff290a505018d79afa",
+    "cost_model": {
+      "features": [
+        "intercept",
+        "bundle_priority",
+        "response_balance_distance",
+        "log1p_record_count"
+      ],
+      "fold_rule": "stable eligible-bundle index modulo five",
+      "folds": [
+        {
+          "coefficients": [
+            -24.068407591389953,
+            -1.1340012048943007,
+            -3.3862405947355403,
+            4.844150699048177
+          ],
+          "fold": 0,
+          "test_bundle_count": 18
+        },
+        {
+          "coefficients": [
+            -24.731751960036675,
+            0.1709260031934221,
+            -1.021189325768989,
+            4.747537229396261
+          ],
+          "fold": 1,
+          "test_bundle_count": 18
+        },
+        {
+          "coefficients": [
+            -26.983248658511087,
+            0.8195544528296654,
+            -0.5451540359678424,
+            5.122491110441679
+          ],
+          "fold": 2,
+          "test_bundle_count": 18
+        },
+        {
+          "coefficients": [
+            -24.600658809895176,
+            -2.0255372930658884,
+            -5.112119509434448,
+            5.111054779846013
+          ],
+          "fold": 3,
+          "test_bundle_count": 18
+        },
+        {
+          "coefficients": [
+            -24.461538898560157,
+            -1.3436454022946953,
+            -3.5457927530819133,
+            4.939745179614444
+          ],
+          "fold": 4,
+          "test_bundle_count": 18
+        }
+      ],
+      "kind": "five-fold deterministic cross-fitted log-linear OLS",
+      "realized_proxy": "median participant response time per bundle in seconds; not expert audit time"
+    },
+    "opportunity": {
+      "budget_savings": {
+        "0.005": 0.0,
+        "0.01": 0.0,
+        "0.02": -0.7241491964494868,
+        "0.05": 0.06477485617491252,
+        "0.1": 0.09627430865991493,
+        "0.2": 0.12753043310651846
+      },
+      "mean_saving": -0.07259493308469016,
+      "minimum_saving": -0.7241491964494868
+    },
+    "predicted_cost_cv": 0.21284865187361726,
+    "predicted_cost_sha256": "0693faeaf6182dbfbcb2009d55c3788639fb8cfe472696adeb54bde035422cf5",
+    "ranking_sha256": "fc94430bc7ad7da459fa1baf0643677d83f12df87cd4dc59251efac65c6e0af5",
+    "realized_proxy_sha256": "75ea68f6f51ef75d60ee31a6f51dccdf51d93d1977c3b3282b9dc20963f267a9",
+    "record_count": 16919,
+    "record_membership_sha256": "a4f8883f0ad2001d6e28a0f78d7271f3087ecfbfb06f41f2312b9bc92f1f2728",
+    "response_sha256": "1f0cce76fe70cb453b1cea594afe622b91204ec46c2838b2513bf18a4501c24f",
+    "score_sha256": "ce2a1dc89ba213dafe4ab06da76d999fa3c7cb104edc6c9ef7c6768fc1808b28",
+    "selected_route": "score_time"
+  },
+  "evidence_tier": "independent pre-truth historical bundle-closure validation; not live expert timing",
+  "formal_design": {
+    "base_seed": 20260905,
+    "decision_rule": {
+      "availability_noninferiority": true,
+      "bundle_closure_issue_free_rate": 1.0,
+      "bundle_closure_unsafe_issued_rate": 0.0,
+      "exact_truth_coverage": true,
+      "positive_common_safe_relative_union_workload_gain": true,
+      "strict_improvement_or_expanded_only": true
+    },
+    "familywise_beta": 0.05,
+    "record_reference_count": 18,
+    "repetitions": 100,
+    "targets": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "time_budgets": [
+      0.0,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ]
+  },
+  "inferential_unit": "one retained participant response record",
+  "lock": {
+    "certificate_sha256": "6ea981f6ac425f9e26a400893b9c5a22345aa8a400ec4b4dfda500157c259848",
+    "formal_runner_sha256": "683899077b74f38825efd822e7401e1676b9c2a693466c7eb7bfb87adcedaca3",
+    "projector_sha256": "babee9fd45314adb46dd5ba0d973a81c370e659865ee630de4ae96302a579648",
+    "protocol_sha256": "9a656fd7b79672379fc8303a0c4bd1aa30a3d130008ded2f9f9bbc15b67d82b0",
+    "public_module_sha256": "c1495025b473e8b1c9b16c068114022450ad96cccaaeafb2a4cdb3aff35c4038"
+  },
+  "prelock_deviation": "six rendered example rows; their six complete target bundles are excluded",
+  "pretruth_public_lock_revision": "supersedes a truth-free 45-bundle lock produced by a self-closing-cell parser bug",
+  "public_audit": {
+    "bundle_count": 90,
+    "bundle_size_max": 196,
+    "bundle_size_median": 188.0,
+    "bundle_size_min": 179,
+    "doi": "10.5281/zenodo.1239758",
+    "exclusions": {
+      "face-prime-word-target:invalid_response_time": 1,
+      "face-prime-word-target:prelock_exposed_bundle": 540,
+      "word-prime-face-target:prelock_exposed_bundle": 588
+    },
+    "license": "CC BY 4.0",
+    "prelock_exposed_bundles_excluded": 6,
+    "record_count": 16919,
+    "source": {
+      "face-prime-word-target": {
+        "accepted_record_count": 8099,
+        "file": "experiment2_face_prime_word_target.xlsx",
+        "projected_columns": [
+          "A",
+          "G",
+          "N"
+        ],
+        "sha256": "4b4c552982a1215527e8d3b8db25cce1a07a630e57a60c62b416f38f34b2772e",
+        "truth_decoded": false
+      },
+      "word-prime-face-target": {
+        "accepted_record_count": 8820,
+        "file": "experiment1_word_prime_face_target.xlsx",
+        "projected_columns": [
+          "A",
+          "F",
+          "N"
+        ],
+        "sha256": "146e6b4720ee305254f95cb35f7425a794b253acf8f957e4df5bc9fe568377b8",
+        "truth_decoded": false
+      }
+    },
+    "truth_decoded": false
+  },
+  "truth_decoded": false
+}

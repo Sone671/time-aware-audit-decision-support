@@ -1,0 +1,500 @@
+{
+  "action_unit": "one subject bundle",
+  "analysis": "post_unlock_subject_bundle_sensitivity_v1",
+  "bundle_summary": {
+    "majority_error_fraction": 0.30955590880737266,
+    "mean_records_per_subject": 16.92508602128901,
+    "median_records_per_subject": 19.0,
+    "record_duration_cap95_seconds": 19.523,
+    "record_error_fraction": 0.3298138447747424,
+    "records": 841126,
+    "subjects": 49697
+  },
+  "cost_proxies": {
+    "cost_cap95_max": "maximum after capping record durations at the public 95th percentile",
+    "cost_cap95_sum": "sum after capping record durations at the public 95th percentile",
+    "cost_max": "maximum raw record duration (longest-record proxy)",
+    "cost_median": "median raw record duration (typical-record proxy)",
+    "cost_sum": "sum of raw record durations (serial-work proxy)"
+  },
+  "loss_rule": "subject majority response differs from exact expected response; ties count as error",
+  "priority_geometry": {
+    "max_risk": {
+      "cost_cap95_max": {
+        "cost_cv": 0.376188225231343,
+        "mean_opportunity": 0.6312496834002655,
+        "minimum_opportunity": 0.20344834292981417,
+        "router": "score_time"
+      },
+      "cost_cap95_sum": {
+        "cost_cv": 1.8650601365858828,
+        "mean_opportunity": 0.6855681164864702,
+        "minimum_opportunity": 0.23995071175192784,
+        "router": "score_time"
+      },
+      "cost_max": {
+        "cost_cv": 18.95094672505383,
+        "mean_opportunity": 0.9886767918337817,
+        "minimum_opportunity": 0.9826752024051951,
+        "router": "risk_per_second"
+      },
+      "cost_median": {
+        "cost_cv": 2.4657346189686766,
+        "mean_opportunity": 0.2522439180361618,
+        "minimum_opportunity": 0.15409919425096041,
+        "router": "score_time"
+      },
+      "cost_sum": {
+        "cost_cv": 17.381002630796473,
+        "mean_opportunity": 0.9644488053417132,
+        "minimum_opportunity": 0.92917177071631,
+        "router": "risk_per_second"
+      }
+    },
+    "mean_risk": {
+      "cost_cap95_max": {
+        "cost_cv": 0.376188225231343,
+        "mean_opportunity": 0.4502355532049204,
+        "minimum_opportunity": 0.22608260117254275,
+        "router": "score_time"
+      },
+      "cost_cap95_sum": {
+        "cost_cv": 1.8650601365858828,
+        "mean_opportunity": 0.27740510293339293,
+        "minimum_opportunity": 0.22382766342091753,
+        "router": "score_time"
+      },
+      "cost_max": {
+        "cost_cv": 18.95094672505383,
+        "mean_opportunity": 0.9591194579839107,
+        "minimum_opportunity": 0.9357872646744502,
+        "router": "risk_per_second"
+      },
+      "cost_median": {
+        "cost_cv": 2.4657346189686766,
+        "mean_opportunity": 0.5884950483959375,
+        "minimum_opportunity": 0.18442160313851041,
+        "router": "score_time"
+      },
+      "cost_sum": {
+        "cost_cv": 17.381002630796473,
+        "mean_opportunity": 0.8688777182134153,
+        "minimum_opportunity": 0.8319602718588477,
+        "router": "risk_per_second"
+      }
+    },
+    "sum_risk": {
+      "cost_cap95_max": {
+        "cost_cv": 0.376188225231343,
+        "mean_opportunity": 0.5031331264447791,
+        "minimum_opportunity": 0.19685266337662255,
+        "router": "score_time"
+      },
+      "cost_cap95_sum": {
+        "cost_cv": 1.8650601365858828,
+        "mean_opportunity": 0.8433490221080656,
+        "minimum_opportunity": 0.4155414980703659,
+        "router": "risk_per_second"
+      },
+      "cost_max": {
+        "cost_cv": 18.95094672505383,
+        "mean_opportunity": 0.999032133561478,
+        "minimum_opportunity": 0.9958417740610375,
+        "router": "risk_per_second"
+      },
+      "cost_median": {
+        "cost_cv": 2.4657346189686766,
+        "mean_opportunity": 0.15716605124760072,
+        "minimum_opportunity": 0.05153252117342899,
+        "router": "score_time"
+      },
+      "cost_sum": {
+        "cost_cv": 17.381002630796473,
+        "mean_opportunity": 0.9956181959957743,
+        "minimum_opportunity": 0.9757038951062527,
+        "router": "risk_per_second"
+      }
+    }
+  },
+  "priority_rule": "mean leave-one-user-out disagreement risk within subject",
+  "proxies": {
+    "cost_cap95_max": {
+      "cost_proxy": "cost_cap95_max",
+      "decision": {
+        "mean_paired_time_reduction": 0.06467986320338351,
+        "paired_count": 299,
+        "paired_time_gate_at_least_0_25": false,
+        "risk_per_second_go": false
+      },
+      "methods": {
+        "risk_per_second": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.02711666666666667,
+          "mean_union_item_fraction": 0.09471825931813457,
+          "mean_union_time_fraction": 0.06298683890909823,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        },
+        "score_time": {
+          "availability": 0.9966666666666667,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.02367892976588629,
+          "mean_union_item_fraction": 0.08029898643976478,
+          "mean_union_time_fraction": 0.0757335822250536,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        }
+      },
+      "population": {
+        "majority_error_fraction": 0.30955590880737266,
+        "mean_records_per_subject": 16.92508602128901,
+        "records": 841126,
+        "subjects": 49697
+      },
+      "public_geometry": {
+        "cost_cv": 0.376188225231343,
+        "mean_opportunity": 0.4502355532049204,
+        "minimum_opportunity": 0.22608260117254275,
+        "router": "score_time"
+      },
+      "targetwise": {
+        "0.25": {
+          "mean": 0.18698404245004183,
+          "median": 0.0015111628377232345,
+          "n": 99,
+          "positive_fraction": 0.6868686868686869,
+          "q05": -0.002197803169663248,
+          "q25": -0.0002634565972680081,
+          "q75": 0.4530331101442873,
+          "q95": 0.45483301906830104
+        },
+        "0.35": {
+          "mean": 0.008278588952575239,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.1,
+          "q05": -0.0013733033018175633,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.001491344151571293
+        },
+        "0.45": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        }
+      }
+    },
+    "cost_cap95_sum": {
+      "cost_proxy": "cost_cap95_sum",
+      "decision": {
+        "mean_paired_time_reduction": 0.07676725665054647,
+        "paired_count": 300,
+        "paired_time_gate_at_least_0_25": false,
+        "risk_per_second_go": false
+      },
+      "methods": {
+        "risk_per_second": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.01551666666666667,
+          "mean_union_item_fraction": 0.08499627744129425,
+          "mean_union_time_fraction": 0.0516523543862863,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        },
+        "score_time": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.030516666666666664,
+          "mean_union_item_fraction": 0.07986102447498508,
+          "mean_union_time_fraction": 0.0663538694164407,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        }
+      },
+      "population": {
+        "majority_error_fraction": 0.30955590880737266,
+        "mean_records_per_subject": 16.92508602128901,
+        "records": 841126,
+        "subjects": 49697
+      },
+      "public_geometry": {
+        "cost_cv": 1.8650601365858828,
+        "mean_opportunity": 0.27740510293339293,
+        "minimum_opportunity": 0.22382766342091753,
+        "router": "score_time"
+      },
+      "targetwise": {
+        "0.25": {
+          "mean": 0.2302905553350266,
+          "median": 0.4086211081196446,
+          "n": 100,
+          "positive_fraction": 0.77,
+          "q05": -0.0022224604110384406,
+          "q25": 0.0001065801173514569,
+          "q75": 0.4519725269978597,
+          "q95": 0.455694677020799
+        },
+        "0.35": {
+          "mean": 1.121461661279799e-05,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.12,
+          "q05": -0.00023152992004713536,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.0006294524394537702
+        },
+        "0.45": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        }
+      }
+    },
+    "cost_max": {
+      "cost_proxy": "cost_max",
+      "decision": {
+        "mean_paired_time_reduction": 0.254879632263888,
+        "paired_count": 300,
+        "paired_time_gate_at_least_0_25": true,
+        "risk_per_second_go": true
+      },
+      "methods": {
+        "risk_per_second": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.0003333333333333334,
+          "mean_union_item_fraction": 0.15159707829446448,
+          "mean_union_time_fraction": 0.02411087962650135,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        },
+        "score_time": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.017,
+          "mean_union_item_fraction": 0.08139679792878175,
+          "mean_union_time_fraction": 0.054858978913122414,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        }
+      },
+      "population": {
+        "majority_error_fraction": 0.30955590880737266,
+        "mean_records_per_subject": 16.92508602128901,
+        "records": 841126,
+        "subjects": 49697
+      },
+      "public_geometry": {
+        "cost_cv": 18.95094672505383,
+        "mean_opportunity": 0.9591194579839107,
+        "minimum_opportunity": 0.9357872646744502,
+        "router": "risk_per_second"
+      },
+      "targetwise": {
+        "0.25": {
+          "mean": 0.7670543923073398,
+          "median": 0.775303063087633,
+          "n": 100,
+          "positive_fraction": 1.0,
+          "q05": 0.5796814716951886,
+          "q25": 0.7329927731538475,
+          "q75": 0.8321594339898065,
+          "q95": 0.8833891878730675
+        },
+        "0.35": {
+          "mean": -0.002415495515676043,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.0,
+          "q05": -0.014108858767690857,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "0.45": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        }
+      }
+    },
+    "cost_median": {
+      "cost_proxy": "cost_median",
+      "decision": {
+        "mean_paired_time_reduction": 0.036711623471917074,
+        "paired_count": 290,
+        "paired_time_gate_at_least_0_25": false,
+        "risk_per_second_go": false
+      },
+      "methods": {
+        "risk_per_second": {
+          "availability": 0.9933333333333333,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.03082214765100672,
+          "mean_union_item_fraction": 0.09119255979828364,
+          "mean_union_time_fraction": 0.08258676076173015,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        },
+        "score_time": {
+          "availability": 0.9666666666666667,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.002603448275862069,
+          "mean_union_item_fraction": 0.07551611038756936,
+          "mean_union_time_fraction": 0.08346589004393365,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        }
+      },
+      "population": {
+        "majority_error_fraction": 0.30955590880737266,
+        "mean_records_per_subject": 16.92508602128901,
+        "records": 841126,
+        "subjects": 49697
+      },
+      "public_geometry": {
+        "cost_cv": 2.4657346189686766,
+        "mean_opportunity": 0.5884950483959375,
+        "minimum_opportunity": 0.18442160313851041,
+        "router": "score_time"
+      },
+      "targetwise": {
+        "0.25": {
+          "mean": 0.04457984132967583,
+          "median": 0.0011363899527690458,
+          "n": 90,
+          "positive_fraction": 0.7555555555555555,
+          "q05": -0.006001401096831838,
+          "q25": 4.0409296266863404e-05,
+          "q75": 0.0022617925767505487,
+          "q95": 0.45187868829798256
+        },
+        "0.35": {
+          "mean": 0.06634185087185127,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.17,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.43235408094659783
+        },
+        "0.45": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        }
+      }
+    },
+    "cost_sum": {
+      "cost_proxy": "cost_sum",
+      "decision": {
+        "mean_paired_time_reduction": 0.24254640581741815,
+        "paired_count": 300,
+        "paired_time_gate_at_least_0_25": false,
+        "risk_per_second_go": false
+      },
+      "methods": {
+        "risk_per_second": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.00195,
+          "mean_union_item_fraction": 0.09378681476413735,
+          "mean_union_time_fraction": 0.02560573818439043,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        },
+        "score_time": {
+          "availability": 1.0,
+          "issued_safety": 1.0,
+          "mean_excess_time_budget": 0.017,
+          "mean_union_item_fraction": 0.08097785915984197,
+          "mean_union_time_fraction": 0.05494060362004841,
+          "passed": true,
+          "unsafe_issued_rate": 0.0
+        }
+      },
+      "population": {
+        "majority_error_fraction": 0.30955590880737266,
+        "mean_records_per_subject": 16.92508602128901,
+        "records": 841126,
+        "subjects": 49697
+      },
+      "public_geometry": {
+        "cost_cv": 17.381002630796473,
+        "mean_opportunity": 0.8688777182134153,
+        "minimum_opportunity": 0.8319602718588477,
+        "router": "risk_per_second"
+      },
+      "targetwise": {
+        "0.25": {
+          "mean": 0.7288953721782981,
+          "median": 0.7373697991212582,
+          "n": 100,
+          "positive_fraction": 1.0,
+          "q05": 0.5718699885145154,
+          "q25": 0.6864363626059178,
+          "q75": 0.7891726811431418,
+          "q95": 0.8371650807026286
+        },
+        "0.35": {
+          "mean": -0.0012561547260438056,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.0,
+          "q05": -0.006584891473975407,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "0.45": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 100,
+          "positive_fraction": 0.0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        }
+      }
+    }
+  },
+  "truth_alignment": {
+    "ambiguous_formal_subject_count": 0,
+    "formal_record_count": 841126,
+    "formal_subject_count": 49697,
+    "invalid_expected_response_row_count_within_formal_subjects": 0,
+    "matched_formal_record_count": 841126,
+    "matched_formal_subject_count": 49697,
+    "missing_formal_record_count": 0,
+    "missing_formal_subject_count": 0,
+    "private_row_count": 1045199,
+    "source_subject_count": 50284,
+    "truth_loaded": true
+  }
+}

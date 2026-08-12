@@ -87,5 +87,5 @@ formal NO-GO with no threshold, target, cost, seed, or parser revision.
 The source is reused noncommercially under CC-BY-NC-4.0, as stated by the
 Oxford University Research Archive and consistent with the bundled Readme.
 Zenodo's broader record-level CC-BY-4.0 label is not used to relax source-file
-terms. Manuscript attribution must identify Farrar, Feehily, Kapanidis and the
+terms. Reuse attribution must identify Farrar, Feehily, Kapanidis and the
 Infection Inspection Zooniverse volunteers.

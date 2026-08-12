@@ -1,0 +1,137 @@
+{
+  "action_unit": "one natural-scene target-detection image; one truth opening resolves 17 participant decisions",
+  "analysis": "wisdom_crowds_image_bundle_independent_validation_v1",
+  "cost_model": {
+    "features": [
+      "intercept",
+      "public_peer_disagreement",
+      "mean_abs_rating_distance_from_5.5"
+    ],
+    "fold_rule": "stable trial index modulo 5",
+    "folds": [
+      {
+        "coefficients": [
+          1.2506197013900198,
+          0.23042951070244494,
+          -0.27176585836077033
+        ],
+        "fold": 0,
+        "test_count": 160
+      },
+      {
+        "coefficients": [
+          1.1963643671050253,
+          0.24909987611080628,
+          -0.25980377240670977
+        ],
+        "fold": 1,
+        "test_count": 160
+      },
+      {
+        "coefficients": [
+          1.285301074160689,
+          0.19748198405333628,
+          -0.27967213570638594
+        ],
+        "fold": 2,
+        "test_count": 160
+      },
+      {
+        "coefficients": [
+          1.289726435193842,
+          0.21630160070622353,
+          -0.28192525019809656
+        ],
+        "fold": 3,
+        "test_count": 160
+      },
+      {
+        "coefficients": [
+          1.32316516153723,
+          0.16357506314198955,
+          -0.29016644668850533
+        ],
+        "fold": 4,
+        "test_count": 160
+      }
+    ],
+    "kind": "five-fold deterministic cross-fitted log-linear OLS",
+    "predicted_cost_sha256": "63cbfe40a77b65d0c4da9fbd59304c99d08b379aeda6a1d2b1ec2b56fc814c3e",
+    "realized_proxy": "median participant trial RT in seconds; not expert audit time",
+    "realized_proxy_sha256": "0717202b918bd9f305a11c815b5fba2135ee3d1dd1da53ec5eb9bc9f71ce37ed"
+  },
+  "evidence_tier": "pre-truth independent historical image-bundle validation; not live prospective expert timing",
+  "formal_design": {
+    "base_seed": 20260829,
+    "familywise_beta": 0.05,
+    "loss": "strict-majority binary decision differs from target-present truth; ties are errors",
+    "repetitions": 100,
+    "sentinel_count": 160,
+    "targets": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "time_budgets": [
+      0.0,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ]
+  },
+  "lock": {
+    "formal_runner_sha256": "4f075df4f5a9beace407c266e3d19f388c5182eebf8d84b307e8c24e3078a189",
+    "projector_sha256": "427f5c0a0b58a16196198ece5a4c2d88b5138fd2c82161cee64f9a68c7cff131",
+    "protocol_sha256": "8b10d4ca2ebd536c4e3eb278a40c841e1da03ac60c7b6d85daeafef30f45ca41",
+    "public_module_sha256": "9774f804ad63822595a0b2919e02eb37690cd93324797e91344899c30cab7e38"
+  },
+  "public_audit": {
+    "bundle_count": 800,
+    "participant_count": 17,
+    "rating_distribution": {
+      "1": 3750,
+      "10": 3045,
+      "2": 971,
+      "3": 747,
+      "4": 507,
+      "5": 935,
+      "6": 762,
+      "7": 631,
+      "8": 968,
+      "9": 1284
+    },
+    "rt_max": 32.81539300177246,
+    "rt_median": 1.439202784961708,
+    "rt_min": 0.4063586247357307,
+    "truth_columns_decoded": false
+  },
+  "public_geometry": {
+    "opportunity": {
+      "budget_savings": {
+        "0.005": 0.4877767706306788,
+        "0.01": 0.36994130987283547,
+        "0.02": 0.24531620897775086,
+        "0.05": 0.1697143604209771,
+        "0.1": 0.11257349293521035,
+        "0.2": 0.06404825348328991
+      },
+      "mean_saving": 0.24156173272012374,
+      "minimum_saving": 0.06404825348328991
+    },
+    "predicted_cost_cv": 0.24051336557100642,
+    "score_sha256": "a10b92d966e8f9137d93886219264334da4b95208e3736032ea71545d3358ec1",
+    "score_time_order_sha256": "d8b2d9f2fd25158bcc454fbb0fe87f94cb8d72016c9312fb1e262d8ee03bd1c7",
+    "selected_route": "score_time"
+  },
+  "source": {
+    "doi": "10.6084/m9.figshare.13276778.v1",
+    "file_md5": "6e4406cf79d956dca7b9d002add32090",
+    "file_sha256": "7709d1fd08c34a3c870768854e4fe0993512d611f026500d2504f5d39d61cfcb",
+    "file_size": 346322,
+    "license": "CC BY 4.0"
+  },
+  "truth_decoded": false
+}

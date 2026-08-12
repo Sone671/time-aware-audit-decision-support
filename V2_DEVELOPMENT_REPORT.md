@@ -76,7 +76,7 @@ Increasing sentinel power fixes certificate excess but erases the efficiency
 gain. V2 therefore combines power planning with public efficiency abstention;
 it does not claim that a larger sentinel improves risk-per-second everywhere.
 
-## Evidence boundary and paper status
+## Evidence boundary and next step
 
 - Development data: old CIFAR-100N, CIFAR-10N, StoryLines-main only.
 - Locked and unused in v2 tuning: NYT Topical Relevance, ImageNet-16H,
@@ -85,10 +85,10 @@ it does not claim that a larger sentinel improves risk-per-second everywhere.
 - No WGA, group audit, retraining, repair utility, or downstream test metric is
   introduced.
 
-V2 is now strong enough to justify a method-paper continuation, but not yet
-submission-ready. The central claim must remain conditional: the system makes
-an efficiency intervention only when public frontier geometry supports it,
-while exact certification governs every issued recommendation.
+V2 supports continued method evaluation but does not yet provide an untouched
+external confirmation. The interpretation remains conditional: the system
+makes an efficiency intervention only when public frontier geometry supports
+it, while exact certification governs every issued recommendation.
 
 ## Required next step
 

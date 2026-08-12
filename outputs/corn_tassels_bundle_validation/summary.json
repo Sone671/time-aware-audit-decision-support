@@ -1,0 +1,72 @@
+{
+  "action_unit": "one corn-field image; one expert box-set opening resolves all linked participant boxes",
+  "alignment_audit": {
+    "ambiguous_declared_expert_count_images": 0,
+    "complete_exact_truth_coverage": false,
+    "declared_coordinate_count_mismatch_images": 3,
+    "extra_expert_images": 0,
+    "image_count": 80,
+    "member_sha256": {
+      "supplementaryData/rawData/d3ai_tassels_mturk_20161205_qualtrics_survey_responses.csv": "dddb16b6a6464d4a1e4877fc2954331c5950edfdc5e9f433a902196bc3230c00",
+      "supplementaryData/rawData/d3ai_tassels_mturk_masters_20161205_qualtrics_survey_responses.csv": "036f1bc87c1d349301c2c642d94c81c741234c9bd37ca9b77b3fc51285533a86",
+      "supplementaryData/rawData/d3ai_tassels_sona_20161202_qualtrics_survey_responses.csv": "785a292d2d286a7d2eec8015a4957e896d4611eaf404a16485e0f0c467e3a0a1"
+    },
+    "mismatch_image_hashes": [
+      "781c84477e6a2d459e0dc5f507d309e010c64cf32b32ae37061ec33315cbfadd",
+      "6ee45bb8559ed7a861416170f018de3a8ad3c3441269885438cdcf038f3209d9",
+      "f570d192fcd834a7d722aec7be4b91f3352e97aa7c2ae4cdc5cf66d533015604"
+    ],
+    "missing_expert_box_images": 0,
+    "missing_expert_coordinate_count": 3,
+    "missing_public_images": 0,
+    "truth_fields_decoded": true
+  },
+  "analysis": "corn_tassels_image_bundle_independent_validation_v1",
+  "decision": "STRUCTURAL_INVALIDATION",
+  "evidence_tier": "post-unlock exact-truth coverage audit; not a method result",
+  "execution_status": "corrected after header-order assertion failure before expert data-row decoding",
+  "formal_design": {
+    "base_seed": 20260827,
+    "familywise_beta": 0.05,
+    "loss": "crowd-medoid versus expert box-set object-F1 < 0.80 at IoU >= 0.50",
+    "repetitions": 100,
+    "sentinel_count": 16,
+    "targets": [
+      0.2,
+      0.35,
+      0.5
+    ],
+    "time_budgets": [
+      0.0,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ]
+  },
+  "frozen_route": "score_time",
+  "interpretation": "candidate-level structural invalidation; public routing remains a truth-free diagnostic and no certificate or efficiency result is reportable",
+  "method_episode_count": 0,
+  "public_geometry": {
+    "opportunity": {
+      "budget_savings": {
+        "0.005": 0.0,
+        "0.01": 0.0,
+        "0.02": 0.0,
+        "0.05": -0.14491781190155728,
+        "0.1": -0.08591428455747407,
+        "0.2": -0.004319611152187042
+      },
+      "mean_saving": -0.0391919512685364,
+      "minimum_saving": -0.14491781190155728
+    },
+    "predicted_cost_cv": 0.11612026654027131,
+    "score_sha256": "203c4fb87b1731f490df3c184279bd58dcf4267cc70db6f596b81757addee7d2",
+    "score_time_order_sha256": "00292557e22c32b3b35028040d9e4396e63a22c1906fe9190fb21922fd656b25",
+    "selected_route": "score_time"
+  },
+  "reason": "the released per-row expert coordinates do not reconstruct the declared complete expert box set for every image",
+  "truth_opened_after_lock": true
+}

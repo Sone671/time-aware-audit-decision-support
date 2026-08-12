@@ -1,0 +1,520 @@
+{
+  "analysis": "correction_aware_record_srs_bundle_opening_v1",
+  "certificate": {
+    "action_unit": "unique bundle opened by any sampled record",
+    "reference_unit": "uniform record SRS without replacement",
+    "residual_transform": "hypergeometric upper pre-opening record-error count minus all errors corrected in opened bundles",
+    "simultaneous_mode": "Bonferroni over seven frozen time prefixes"
+  },
+  "claim": "exact finite-corpus control of residual erroneous records after planned and reference-triggered bundle corrections",
+  "evidence_tier": "post-outcome methodological reanalysis; not a fresh confirmation or live expert-timing study",
+  "results": [
+    {
+      "all_method_operating": {
+        "operating": [
+          {
+            "availability": 0.6666666666666666,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.05600000000000001,
+            "mean_time_budget": 0.056600000000000004,
+            "mean_union_bundle_fraction": 0.18279510395707577,
+            "mean_union_time_fraction": 0.13038149886002132,
+            "method": "risk_per_second",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.6666666666666666,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.053849999999999995,
+            "mean_time_budget": 0.054450000000000005,
+            "mean_union_bundle_fraction": 0.1560670690811536,
+            "mean_union_time_fraction": 0.11617346292772027,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.6666666666666666,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.08992499999999999,
+            "mean_time_budget": 0.09052500000000001,
+            "mean_union_bundle_fraction": 0.2205630449362844,
+            "mean_union_time_fraction": 0.17737867572152904,
+            "method": "risk_per_second",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.6666666666666666,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.090425,
+            "mean_time_budget": 0.091025,
+            "mean_union_bundle_fraction": 0.1834852448021462,
+            "mean_union_time_fraction": 0.134042713293311,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          }
+        ]
+      },
+      "cost_model": {
+        "intercept": 0.30732531202267566,
+        "slope": 1.110766439927686
+      },
+      "dataset": "Infection Inspection",
+      "digests": {
+        "predicted_cost_sha256": "9b670a401b69cfa3d391d405137fc16d232e512978f11d610f16ae2e9795a6b7",
+        "record_bundle_sha256": "8193b86b0384b78d74034a1bf42ae8a7b8f1f50cb30eac59c30afb1175ea0adb",
+        "record_error_sha256": "084dbc9d80ed5ebd38bfc683e26c2824c31648e538e1e20d1c297f08c2b6b0aa"
+      },
+      "evidence_timing": "post-outcome method reanalysis on the preserved 70/30 held-out split",
+      "population": {
+        "bundle_count": 14910,
+        "bundle_size_max": 21,
+        "bundle_size_median": 17.0,
+        "bundle_size_min": 2,
+        "record_count": 201494,
+        "record_error_count": 76166,
+        "record_error_fraction": 0.3780062929913546
+      },
+      "public_geometry": {
+        "minimum_opportunity": 0.013676422379723774,
+        "predicted_cost_cv": 0.4658651792406649
+      },
+      "record_loss": "participant response differs from exact expected response",
+      "reference_plan": {
+        "bundle_opening_cap_fraction": 0.2,
+        "maximum_possible_bundle_openings": 1000,
+        "record_srs_count": 1000
+      },
+      "selected_route": "score_time",
+      "selected_route_curve": {
+        "mean_opened_reference_bundle_count": 910.01,
+        "mean_sampled_error_count": 349.98857142857145,
+        "mean_spillover_corrected_error_count": 5074.524285714286,
+        "mean_union_time_fraction": 0.11261848680534103,
+        "positive_spillover_cell_fraction": 1.0
+      },
+      "selected_route_operating": {
+        "operating": [
+          {
+            "availability": 0.6666666666666666,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.053849999999999995,
+            "mean_time_budget": 0.054450000000000005,
+            "mean_union_bundle_fraction": 0.1560670690811536,
+            "mean_union_time_fraction": 0.11617346292772027,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.6666666666666666,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.090425,
+            "mean_time_budget": 0.091025,
+            "mean_union_bundle_fraction": 0.1834852448021462,
+            "mean_union_time_fraction": 0.134042713293311,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          }
+        ]
+      },
+      "selected_route_variant_gain": {
+        "common_safe_cells": 200,
+        "expanded_only_safe_recommendations": 0,
+        "mean_relative_union_time_reduction_common_safe": 0.10305199825592652,
+        "mean_time_budget_reduction_common_safe": 0.036574999999999996,
+        "mean_union_time_fraction_reduction_common_safe": 0.017869250365590745,
+        "strict_time_budget_improvement_cells": 78
+      },
+      "targets": [
+        0.25,
+        0.35,
+        0.45
+      ]
+    },
+    {
+      "all_method_operating": {
+        "operating": [
+          {
+            "availability": 0.41333333333333333,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.11467741935483872,
+            "mean_time_budget": 0.11669354838709675,
+            "mean_union_bundle_fraction": 0.27668010752688177,
+            "mean_union_time_fraction": 0.296815837262925,
+            "method": "risk_per_second",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.3933333333333333,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.11508474576271185,
+            "mean_time_budget": 0.11677966101694914,
+            "mean_union_bundle_fraction": 0.27725988700564974,
+            "mean_union_time_fraction": 0.2972924404791895,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.23333333333333334,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.1394285714285714,
+            "mean_time_budget": 0.1401428571428571,
+            "mean_union_bundle_fraction": 0.29309523809523813,
+            "mean_union_time_fraction": 0.31412833760171893,
+            "method": "risk_per_second",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.22666666666666666,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.13867647058823526,
+            "mean_time_budget": 0.13941176470588232,
+            "mean_union_bundle_fraction": 0.29436274509803917,
+            "mean_union_time_fraction": 0.3175493061525967,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          }
+        ]
+      },
+      "cost_model": {
+        "intercept": 8.020397779000014,
+        "slope": -0.5057294473472844
+      },
+      "dataset": "WhichDog (full)",
+      "digests": {
+        "predicted_cost_sha256": "4fa2ad4d60fb4384bd1868e21402817663b4fe53116769c8ebb275882eea0e78",
+        "record_bundle_sha256": "14baf038bc9fa6af924f458f19c0742de7f22229e3e270775191442aa3e93045",
+        "record_error_sha256": "f97e38b931711eba77224ab2fd7180e77800ee7e3a5c02415173d13c5a0c56c4"
+      },
+      "evidence_timing": "post-outcome method reanalysis on the preserved 70/30 held-out split",
+      "population": {
+        "bundle_count": 120,
+        "bundle_size_max": 86,
+        "bundle_size_median": 80.0,
+        "bundle_size_min": 58,
+        "record_count": 9158,
+        "record_error_count": 4029,
+        "record_error_fraction": 0.4399432190434593
+      },
+      "public_geometry": {
+        "minimum_opportunity": -0.9907632237807056,
+        "predicted_cost_cv": 0.04822198523182744
+      },
+      "record_loss": "full-label response differs from unique image class",
+      "reference_plan": {
+        "bundle_opening_cap_fraction": 0.2,
+        "maximum_possible_bundle_openings": 24,
+        "record_srs_count": 24
+      },
+      "selected_route": "score_time",
+      "selected_route_curve": {
+        "mean_opened_reference_bundle_count": 20.64142857142857,
+        "mean_sampled_error_count": 9.711428571428572,
+        "mean_spillover_corrected_error_count": 658.2742857142857,
+        "mean_union_time_fraction": 0.23845009077359727,
+        "positive_spillover_cell_fraction": 1.0
+      },
+      "selected_route_operating": {
+        "operating": [
+          {
+            "availability": 0.3933333333333333,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.11508474576271185,
+            "mean_time_budget": 0.11677966101694914,
+            "mean_union_bundle_fraction": 0.27725988700564974,
+            "mean_union_time_fraction": 0.2972924404791895,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.22666666666666666,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.13867647058823526,
+            "mean_time_budget": 0.13941176470588232,
+            "mean_union_bundle_fraction": 0.29436274509803917,
+            "mean_union_time_fraction": 0.3175493061525967,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          }
+        ]
+      },
+      "selected_route_variant_gain": {
+        "common_safe_cells": 68,
+        "expanded_only_safe_recommendations": 50,
+        "mean_relative_union_time_reduction_common_safe": 0.21798270301789105,
+        "mean_time_budget_reduction_common_safe": 0.07352941176470588,
+        "mean_union_time_fraction_reduction_common_safe": 0.07106976457620086,
+        "strict_time_budget_improvement_cells": 50
+      },
+      "targets": [
+        0.35,
+        0.45,
+        0.55
+      ]
+    },
+    {
+      "all_method_operating": {
+        "operating": [
+          {
+            "availability": 0.5566666666666666,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.0919760479041916,
+            "mean_time_budget": 0.0919760479041916,
+            "mean_union_bundle_fraction": 0.25513972055888223,
+            "mean_union_time_fraction": 0.2720886192973455,
+            "method": "risk_per_second",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.52,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.08589743589743588,
+            "mean_time_budget": 0.08589743589743588,
+            "mean_union_bundle_fraction": 0.25074786324786325,
+            "mean_union_time_fraction": 0.2671914849602909,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.44666666666666666,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.12417910447761192,
+            "mean_time_budget": 0.12417910447761192,
+            "mean_union_bundle_fraction": 0.28072139303482585,
+            "mean_union_time_fraction": 0.29935365772681705,
+            "method": "risk_per_second",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.41,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.11878048780487804,
+            "mean_time_budget": 0.11878048780487804,
+            "mean_union_bundle_fraction": 0.2770325203252032,
+            "mean_union_time_fraction": 0.29786444818942154,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          }
+        ]
+      },
+      "cost_model": {
+        "intercept": 8.020397779000014,
+        "slope": -0.5057294473472844
+      },
+      "dataset": "WhichDog (candidate)",
+      "digests": {
+        "predicted_cost_sha256": "4fa2ad4d60fb4384bd1868e21402817663b4fe53116769c8ebb275882eea0e78",
+        "record_bundle_sha256": "d6ac509487300aa26df5b890f1d6414a126413678c1aa9863ed6d1478373df26",
+        "record_error_sha256": "7d03422022a5316e8c8e042894a71317b2c78d48fc773635d820157536356ee7"
+      },
+      "evidence_timing": "post-outcome method reanalysis on the preserved 70/30 held-out split",
+      "population": {
+        "bundle_count": 120,
+        "bundle_size_max": 85,
+        "bundle_size_median": 80.0,
+        "bundle_size_min": 57,
+        "record_count": 9122,
+        "record_error_count": 3105,
+        "record_error_fraction": 0.3403858802894102
+      },
+      "public_geometry": {
+        "minimum_opportunity": -0.9907632237807056,
+        "predicted_cost_cv": 0.04822198523182744
+      },
+      "record_loss": "candidate response fails to cover the unique image class",
+      "reference_plan": {
+        "bundle_opening_cap_fraction": 0.2,
+        "maximum_possible_bundle_openings": 24,
+        "record_srs_count": 24
+      },
+      "selected_route": "score_time",
+      "selected_route_curve": {
+        "mean_opened_reference_bundle_count": 20.518571428571427,
+        "mean_sampled_error_count": 7.722857142857142,
+        "mean_spillover_corrected_error_count": 503.76428571428573,
+        "mean_union_time_fraction": 0.2334878147949532,
+        "positive_spillover_cell_fraction": 1.0
+      },
+      "selected_route_operating": {
+        "operating": [
+          {
+            "availability": 0.52,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.08589743589743588,
+            "mean_time_budget": 0.08589743589743588,
+            "mean_union_bundle_fraction": 0.25074786324786325,
+            "mean_union_time_fraction": 0.2671914849602909,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.41,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.11878048780487804,
+            "mean_time_budget": 0.11878048780487804,
+            "mean_union_bundle_fraction": 0.2770325203252032,
+            "mean_union_time_fraction": 0.29786444818942154,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          }
+        ]
+      },
+      "selected_route_variant_gain": {
+        "common_safe_cells": 123,
+        "expanded_only_safe_recommendations": 33,
+        "mean_relative_union_time_reduction_common_safe": 0.1605196528189717,
+        "mean_time_budget_reduction_common_safe": 0.0575609756097561,
+        "mean_union_time_fraction_reduction_common_safe": 0.05314851295487492,
+        "strict_time_budget_improvement_cells": 75
+      },
+      "targets": [
+        0.35,
+        0.45,
+        0.55
+      ]
+    },
+    {
+      "all_method_operating": {
+        "operating": [
+          {
+            "availability": 0.4,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.06254166666666668,
+            "mean_time_budget": 0.071875,
+            "mean_union_bundle_fraction": 0.23664583333333333,
+            "mean_union_time_fraction": 0.24102775155951536,
+            "method": "risk_per_second",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.37333333333333335,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.06294642857142858,
+            "mean_time_budget": 0.07142857142857142,
+            "mean_union_bundle_fraction": 0.22842633928571426,
+            "mean_union_time_fraction": 0.24001950878316686,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.31666666666666665,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.12552631578947365,
+            "mean_time_budget": 0.12815789473684208,
+            "mean_union_bundle_fraction": 0.2793552631578948,
+            "mean_union_time_fraction": 0.2875314180873061,
+            "method": "risk_per_second",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.3,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.14644444444444443,
+            "mean_time_budget": 0.14811111111111108,
+            "mean_union_bundle_fraction": 0.2788055555555556,
+            "mean_union_time_fraction": 0.30151690076326315,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          }
+        ]
+      },
+      "cost_model": {
+        "kind": "preserved five-fold deterministic cross-fitted model"
+      },
+      "dataset": "Wisdom of Crowds",
+      "digests": {
+        "predicted_cost_sha256": "63cbfe40a77b65d0c4da9fbd59304c99d08b379aeda6a1d2b1ec2b56fc814c3e",
+        "record_bundle_sha256": "6689eca656dad85c620a746041e11699bd4b85ea3e6a9625ee4c27e073809f46",
+        "record_error_sha256": "073bd762e2f93966b4e9418998a0a75debaea7d41faa642714b41b3b5145ed6a"
+      },
+      "evidence_timing": "post-outcome secondary analysis of the independently locked bundle validation",
+      "population": {
+        "bundle_count": 800,
+        "bundle_size_max": 17,
+        "bundle_size_median": 17.0,
+        "bundle_size_min": 17,
+        "record_count": 13600,
+        "record_error_count": 3556,
+        "record_error_fraction": 0.2614705882352941
+      },
+      "public_geometry": {
+        "minimum_opportunity": 0.06404825348328991,
+        "predicted_cost_cv": 0.24051336557100642
+      },
+      "record_loss": "participant binary decision differs from target-present truth",
+      "reference_plan": {
+        "bundle_opening_cap_fraction": 0.2,
+        "maximum_possible_bundle_openings": 160,
+        "record_srs_count": 160
+      },
+      "selected_route": "score_time",
+      "selected_route_curve": {
+        "mean_opened_reference_bundle_count": 139.46714285714285,
+        "mean_sampled_error_count": 38.68857142857143,
+        "mean_spillover_corrected_error_count": 564.4928571428571,
+        "mean_union_time_fraction": 0.22678800488075068,
+        "positive_spillover_cell_fraction": 1.0
+      },
+      "selected_route_operating": {
+        "operating": [
+          {
+            "availability": 0.37333333333333335,
+            "certificate_variant": "bundle_expanded",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.06294642857142858,
+            "mean_time_budget": 0.07142857142857142,
+            "mean_union_bundle_fraction": 0.22842633928571426,
+            "mean_union_time_fraction": 0.24001950878316686,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          },
+          {
+            "availability": 0.3,
+            "certificate_variant": "sampled_only",
+            "issue_free_rate": 1.0,
+            "mean_excess_time_budget": 0.14644444444444443,
+            "mean_time_budget": 0.14811111111111108,
+            "mean_union_bundle_fraction": 0.2788055555555556,
+            "mean_union_time_fraction": 0.30151690076326315,
+            "method": "score_time",
+            "unsafe_issued_rate": 0.0
+          }
+        ]
+      },
+      "selected_route_variant_gain": {
+        "common_safe_cells": 90,
+        "expanded_only_safe_recommendations": 22,
+        "mean_relative_union_time_reduction_common_safe": 0.2673067137995275,
+        "mean_time_budget_reduction_common_safe": 0.10588888888888891,
+        "mean_union_time_fraction_reduction_common_safe": 0.08510715511030753,
+        "strict_time_budget_improvement_cells": 78
+      },
+      "targets": [
+        0.1,
+        0.2,
+        0.3
+      ]
+    }
+  ]
+}

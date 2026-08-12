@@ -1,0 +1,85 @@
+{
+  "analysis": "emotion_bundle_closure_independent_validation_v1",
+  "artifact_digests": {
+    "public_truth_free": true,
+    "record_error_sha256": "f17b9511b5077b746b785ee22dc126d38fc78ecc677c062037f7d88d496fec64"
+  },
+  "curve_diagnostics": {
+    "mean_reference_opened_bundles": 15.897142857142857,
+    "mean_sampled_errors": 1.1242857142857143,
+    "mean_spillover_corrected_errors": 194.31857142857143,
+    "positive_spillover_cell_fraction": 1.0
+  },
+  "evidence_tier": "independent pre-truth historical bundle-closure validation; not live expert timing",
+  "formal_design": {
+    "base_seed": 20260905,
+    "decision_rule": {
+      "availability_noninferiority": true,
+      "bundle_closure_issue_free_rate": 1.0,
+      "bundle_closure_unsafe_issued_rate": 0.0,
+      "exact_truth_coverage": true,
+      "positive_common_safe_relative_union_workload_gain": true,
+      "strict_improvement_or_expanded_only": true
+    },
+    "familywise_beta": 0.05,
+    "record_reference_count": 18,
+    "repetitions": 100,
+    "targets": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "time_budgets": [
+      0.0,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ]
+  },
+  "interpretation": "independent pre-truth historical validation; not live prospective expert timing",
+  "operating": {
+    "bundle_expanded": {
+      "availability": 0.20333333333333334,
+      "certificate_variant": "bundle_expanded",
+      "issue_free_rate": 1.0,
+      "mean_time_budget": 0.07950819672131147,
+      "mean_union_time_fraction": 0.24557938441414498,
+      "unsafe_issued_rate": 0.0
+    },
+    "sampled_only": {
+      "availability": 0.16333333333333333,
+      "certificate_variant": "sampled_only",
+      "issue_free_rate": 1.0,
+      "mean_time_budget": 0.0642857142857143,
+      "mean_union_time_fraction": 0.23542946048676805,
+      "unsafe_issued_rate": 0.0
+    }
+  },
+  "paired": {
+    "common_safe_cells": 49,
+    "expanded_only_safe_recommendations": 12,
+    "mean_relative_union_time_reduction_common_safe": 0.03600560843977965,
+    "strict_time_budget_improvement_cells": 7
+  },
+  "passed": true,
+  "population": {
+    "bundle_count": 90,
+    "record_count": 16919,
+    "record_error_count": 1182,
+    "record_error_fraction": 0.06986228500502394
+  },
+  "prelock_deviation": "six rendered example rows; their six complete target bundles are excluded",
+  "selected_route": "score_time",
+  "truth_audit": {
+    "eligible_bundle_count": 90,
+    "exact_truth_coverage": true,
+    "maximum_truth_rows_per_bundle": 196,
+    "minimum_truth_rows_per_bundle": 180,
+    "truth_bundle_count": 90,
+    "truth_decoded": true
+  },
+  "truth_opened_after_complete_lock": true
+}

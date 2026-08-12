@@ -71,7 +71,7 @@ clear that raw long-session heterogeneity amplifies the primary effect size.
 ## Claim boundary and limitations
 
 This is the first eligible fresh simultaneous-v3 confirmation in the current
-research chain. It can replace the manuscript's statement that no fresh v3
+research chain. It can replace the earlier documentation statement that no fresh v3
 confirmation exists. It does not erase the corrected/post-unlock status of
 WhichDog, SATBench or Dopanim.
 

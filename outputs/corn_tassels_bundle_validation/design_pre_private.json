@@ -1,0 +1,138 @@
+{
+  "action_unit": "one corn-field image; one expert box-set opening resolves all linked participant boxes",
+  "analysis": "corn_tassels_image_bundle_independent_validation_v1",
+  "bundle_summary": {
+    "bundle_count": 80,
+    "median_box_count_mean": 6.025,
+    "participant_count_max": 126,
+    "participant_count_median": 126.0,
+    "participant_count_min": 126,
+    "priority_mean": 0.27816151053953736,
+    "realized_proxy_median_seconds": 26.605999999999998
+  },
+  "cost_model": {
+    "features": [
+      "intercept",
+      "log1p(median_box_count)",
+      "public_peer_disagreement"
+    ],
+    "fold_rule": "UTF-8 image-name order index modulo 5",
+    "folds": [
+      {
+        "coefficients": [
+          1.6498670966982059,
+          0.8214259377683404,
+          0.12261542199440781
+        ],
+        "fold": 0,
+        "test_count": 16
+      },
+      {
+        "coefficients": [
+          1.6744145356478808,
+          0.8523916636367331,
+          -0.2308367477337709
+        ],
+        "fold": 1,
+        "test_count": 16
+      },
+      {
+        "coefficients": [
+          1.571805361527162,
+          0.8754773430509177,
+          0.020382801709500853
+        ],
+        "fold": 2,
+        "test_count": 16
+      },
+      {
+        "coefficients": [
+          1.593704476901657,
+          0.8249034382173641,
+          0.19940707251415835
+        ],
+        "fold": 3,
+        "test_count": 16
+      },
+      {
+        "coefficients": [
+          1.6303641921511371,
+          0.8256394816068363,
+          0.08993661232732632
+        ],
+        "fold": 4,
+        "test_count": 16
+      }
+    ],
+    "kind": "five-fold deterministic cross-fitted log-linear OLS",
+    "predicted_cost_sha256": "45c5b18386fc41b890befa36c40836e99f92ad2c70c524eab3c5b24f8c8e0318",
+    "realized_proxy_sha256": "d31a65659376fb7869b5aec690648f06372011f0f40c811424fa97bc65b7afdc"
+  },
+  "evidence_tier": "pre-truth independent historical bundle validation; not live prospective expert timing",
+  "formal_design": {
+    "base_seed": 20260827,
+    "familywise_beta": 0.05,
+    "loss": "crowd-medoid versus expert box-set object-F1 < 0.80 at IoU >= 0.50",
+    "repetitions": 100,
+    "sentinel_count": 16,
+    "targets": [
+      0.2,
+      0.35,
+      0.5
+    ],
+    "time_budgets": [
+      0.0,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ]
+  },
+  "lock": {
+    "formal_runner_sha256": "a8cbd0fbe6e2de1d74a2ceda854db51eef4d39ee7c84d72d2ed5a63c0415a431",
+    "protocol_sha256": "1a091ec0cbbb15df8cd58241ecdea16ef17bcb9ecf8790b341f6ddf352e899bd",
+    "public_module_sha256": "87c35dd2ab83020e2b6cf8142626478a23592b3f714dd090b2d846699f720733"
+  },
+  "parse_audit": {
+    "complete_user_image_count": 10080,
+    "excluded_degenerate_user_box_row_count": 19,
+    "excluded_incomplete_row_count": 1799,
+    "image_count": 80,
+    "member_sha256": {
+      "supplementaryData/rawData/d3ai_tassels_mturk_20161205_qualtrics_survey_responses.csv": "dddb16b6a6464d4a1e4877fc2954331c5950edfdc5e9f433a902196bc3230c00",
+      "supplementaryData/rawData/d3ai_tassels_mturk_masters_20161205_qualtrics_survey_responses.csv": "036f1bc87c1d349301c2c642d94c81c741234c9bd37ca9b77b3fc51285533a86",
+      "supplementaryData/rawData/d3ai_tassels_sona_20161202_qualtrics_survey_responses.csv": "785a292d2d286a7d2eec8015a4957e896d4611eaf404a16485e0f0c467e3a0a1"
+    },
+    "raw_row_count": 61888,
+    "truth_fields_decoded": false,
+    "user_count": 126
+  },
+  "public_geometry": {
+    "opportunity": {
+      "budget_savings": {
+        "0.005": 0.0,
+        "0.01": 0.0,
+        "0.02": 0.0,
+        "0.05": -0.14491781190155728,
+        "0.1": -0.08591428455747407,
+        "0.2": -0.004319611152187042
+      },
+      "mean_saving": -0.0391919512685364,
+      "minimum_saving": -0.14491781190155728
+    },
+    "predicted_cost_cv": 0.11612026654027131,
+    "score_sha256": "203c4fb87b1731f490df3c184279bd58dcf4267cc70db6f596b81757addee7d2",
+    "score_time_order_sha256": "00292557e22c32b3b35028040d9e4396e63a22c1906fe9190fb21922fd656b25",
+    "selected_route": "score_time"
+  },
+  "source": {
+    "archive_bytes": 11399572,
+    "archive_sha256": "2edd566397fb3ce5076d2674a46690ff0767aed47d19b229f18dc0859731dd82",
+    "doi": "10.6084/m9.figshare.6360236.v2",
+    "license": "CC BY 4.0",
+    "official_code_commit": "129ce10f1fcf1528feeba4e9b8f9f4a3b98fca44"
+  },
+  "truth_decoded": false
+}

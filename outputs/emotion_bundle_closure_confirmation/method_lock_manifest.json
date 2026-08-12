@@ -1,0 +1,7 @@
+{
+  "certificate_sha256": "6ea981f6ac425f9e26a400893b9c5a22345aa8a400ec4b4dfda500157c259848",
+  "formal_runner_sha256": "683899077b74f38825efd822e7401e1676b9c2a693466c7eb7bfb87adcedaca3",
+  "projector_sha256": "babee9fd45314adb46dd5ba0d973a81c370e659865ee630de4ae96302a579648",
+  "protocol_sha256": "9a656fd7b79672379fc8303a0c4bd1aa30a3d130008ded2f9f9bbc15b67d82b0",
+  "public_module_sha256": "c1495025b473e8b1c9b16c068114022450ad96cccaaeafb2a4cdb3aff35c4038"
+}
